@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+      <meta charset="UTF-8">
+      <title>Insert title here</title>
+      
+      <style>
+         body {
+            text-align: center;
+         }
+         
+         img{
+            width: 300px;
+            height: 300px;
+            margin: 0px 15px;
+            border-radius: 50%;
+         }
+      </style>
+   </head>
+<body>
+
+	<h1>image.html</h1>
+	
+	<!-- 
+		절대 경로(Absolute Path)
+		/		루트경로
+		
+		상대 경로(Relative Path)
+		./		현재 디렉토리
+		../		상위 디렉토리
+	-->
+	
+	<!-- http://localhost:9991 (까지가 루트로 인식되고 있음. 절대경로값으로 찾아가려면 이후 부분까지 적어야 함 )-->
+	<a href="/web1">home1</a>
+	<!-- http://localhost:9991/web1/ (상대경로값으로 찾아가려면 타임리프 문법에서 자동으로 포트번호 이후까지 적용해 줌. 이 주소에 /만 추가하면 home으로 연결됨) -->
+	<a th:href="@{/}">home2</a>
+	<!-- http://localhost:9991/web1/image (상대경로값으로 찾아가는 것. 현재 디렉토리보다 상위로 올라가며 home으로 연결됨) -->
+	<a href="./">home3</a>
+	
+	<hr>
+	<!-- context-path를 자동 반영하지 않음 (절대경로로 적을 때 web1과 같이 루트 경로를 적지 않으면 자동으로 인식하지 못해서 못찾음)-->
+	<img src="image/aaa.jpg">
+	<img src="image/ccc.jpg"> 
+	<img src="image/ddd.jpg">
+	<!-- context-path를 자동 반영함 (타임리프 문법에 의해 작성된 것. th가 붙으면 타임리프 문법으로 인식하겠다.(라고 2줄에 적힘) 루트 경로를 자동으로 읽어온다.)-->
+	<img th:src="@{/image/bbb.jpg}">
+	
+
+</body>
+</html>

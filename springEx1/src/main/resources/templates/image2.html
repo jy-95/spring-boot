@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="thymleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+ <style>
+         body {
+            text-align: center;
+         }
+         
+         img{
+            width: 300px;
+            height: 300px;
+            margin: 0px 15px;
+            border-radius: 50%;
+         }
+      </style>
+</head>
+<body>
+	<h1>image2.html</h1>
+	
+	<a href="/web1">home1</a> 
+	<a href="../">home2</a>
+	<a th:href="@{/}">home3</a>
+	
+	
+	<hr>
+	<p>상대 경로: <img src="../image/aaa.jpg"></p>
+	<p>절대 경로: <img src="/web1/image/bbb.jpg"></p>
+	<p>타임 리프: <img th:src="@{/image/ccc.jpg}"></p>
+	
+</body>
+</html>
