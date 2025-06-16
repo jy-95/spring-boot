@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="thymleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>죄송합니다</h1>
+	<p>문제가 지속되면 관리자에게 문의해주세요</p>
+	<a th:href="@{/}">홈으로 돌아가기</a>
+	
+	<p th:text=" '에러 코드: ' + ${status}"></p>
+	<p th:text=" '에러 메시지: ' + ${error}"></p>
+
+</body>
+</html>

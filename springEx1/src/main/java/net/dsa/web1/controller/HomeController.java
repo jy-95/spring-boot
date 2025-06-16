@@ -11,4 +11,9 @@ public class HomeController {
 	public String home() {
 		return "home"; 
 	}
+	
+	@GetMapping("exception500")
+	public String exception500() {
+		throw new RuntimeException();
+	}
 }

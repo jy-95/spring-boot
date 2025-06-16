@@ -22,6 +22,17 @@ public class StaticController {
 	
 	@GetMapping("sub/image3")
 	public String image3() {
+		//template.sub라는 패키지에서 image3.html을 찾으러 가겠다.
 		return "sub/image3";
+	}
+	
+	@GetMapping("css")
+	public String css() {
+		return "css";
+	}
+	
+	@GetMapping("js")
+	public String js() {
+		return "js";
 	}
 }
