@@ -7,12 +7,12 @@ const Check = (event) => {
 		
 		event.preventDefault();
 		
-		if(name.value == "") {
+		if(name.value=== "") {
 			alert("이름을 입력하세요.")
 			return false;
 		}
 		
-		if(email.value == "") {
+		if(email.value=== "") {
 			alert("이메일을 입력하세요.")
 			return false;
 				}
@@ -23,7 +23,8 @@ const Check = (event) => {
 		}
 		
 		alert('성공')
-		form.submit;
+		// document.getElementById('myform').submit();
+		return true;
 		
 	    };
 	
