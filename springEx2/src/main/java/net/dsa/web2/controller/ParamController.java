@@ -1,6 +1,7 @@
 package net.dsa.web2.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -60,5 +61,41 @@ public class ParamController {
 		log.debug("param3 log = person: {}",p);
 		
 		return "redirect:/";
+	}
+	
+	@GetMapping("param4")
+	public String param4(Person p) {
+		log.debug("param4 log = person:{}",p);
+		
+		return "redirect:/";
+	}
+	
+	@GetMapping("param5")
+	public String param5(
+		@RequestParam(name = "name", defaultValue = "아무개") String name,
+		@RequestParam(name = "age", defaultValue = "0") int age,
+		@RequestParam(name = "phone", defaultValue = "01011112222") String phone) {
+		
+		log.debug("param5 log = name: {}, age: {}, phone: {}", name, age, phone);
+		return "redirect:/";
+	}
+	
+	
+	// import org.springframework.ui.Model;
+	// Model : 컨트롤러에서 뷰(JSP, Thymeleaf 등)로 데이터를 넘겨주는데 사용되는 데이터 전달 객체
+	// Controller에서 HTML로 넘어가는 순간만 유효한 1회성 객체구조
+	// *redirect:/ 등의 재요청에서는 저장된 데이터가 없어짐
+	
+	@GetMapping("model")
+	public String model(Model model) {		//model은 스프링에서 기본 제공. 스프링이 집어넣어주는 객체 구조. 임포트 시 springframework로 임포트
+		String str = "문자열";
+		int num = 100;
+		Person p = new Person("홍길동", 33, "01011112222");
+		
+		model.addAttribute("str", str);
+		model.addAttribute("num", num);
+		model.addAttribute("person",p);
+		
+		return "param/model";
 	}
 }

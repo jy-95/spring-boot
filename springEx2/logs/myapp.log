@@ -1,183 +1,55 @@
-2025-06-17T16:16:10.090+09:00  INFO 13284 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 13284 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
-2025-06-17T16:16:10.090+09:00 DEBUG 13284 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
-2025-06-17T16:16:10.091+09:00  INFO 13284 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
-2025-06-17T16:16:10.183+09:00  INFO 13284 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-06-17T16:16:10.189+09:00  INFO 13284 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-17T16:16:10.189+09:00  INFO 13284 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-06-17T16:16:10.200+09:00  INFO 13284 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
-2025-06-17T16:16:10.200+09:00  INFO 13284 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 108 ms
-2025-06-17T16:16:10.232+09:00  INFO 13284 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-06-17T16:16:10.238+09:00  INFO 13284 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
-2025-06-17T16:16:10.241+09:00  INFO 13284 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.179 seconds (process running for 2981.079)
-2025-06-17T16:16:10.243+09:00  INFO 13284 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-06-17T16:18:17.891+09:00  INFO 13284 --- [springEx2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-17T16:18:17.892+09:00  INFO 13284 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-17T16:18:17.892+09:00  INFO 13284 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-06-17T16:18:17.893+09:00 DEBUG 13284 --- [springEx2] [http-nio-9992-exec-1] n.dsa.web2.controller.LombokController   : lombok1 실행
-2025-06-17T16:18:17.894+09:00 DEBUG 13284 --- [springEx2] [http-nio-9992-exec-1] n.dsa.web2.controller.LombokController   : Person : Person(name=홍길동, age=20, phone=01011112222)
-2025-06-17T16:18:17.896+09:00 DEBUG 13284 --- [springEx2] [http-nio-9992-exec-1] n.dsa.web2.controller.LombokController   : Person2: Person(name=이순신, age=99, phone=01033334444)
-2025-06-17T16:18:19.338+09:00 ERROR 13284 --- [springEx2] [http-nio-9992-exec-2] n.dsa.web2.controller.LombokController   : error
-2025-06-17T16:18:19.339+09:00  WARN 13284 --- [springEx2] [http-nio-9992-exec-2] n.dsa.web2.controller.LombokController   : warn
-2025-06-17T16:18:19.339+09:00  INFO 13284 --- [springEx2] [http-nio-9992-exec-2] n.dsa.web2.controller.LombokController   : info
-2025-06-17T16:18:19.339+09:00 DEBUG 13284 --- [springEx2] [http-nio-9992-exec-2] n.dsa.web2.controller.LombokController   : debug
-2025-06-17T16:18:19.339+09:00 DEBUG 13284 --- [springEx2] [http-nio-9992-exec-2] n.dsa.web2.controller.LombokController   : debug: 로그로그
-2025-06-17T16:18:46.009+09:00  INFO 13284 --- [springEx2] [RMI TCP Connection(99)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2025-06-17T16:20:02.303+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 12356 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
-2025-06-17T16:20:02.305+09:00 DEBUG 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
-2025-06-17T16:20:02.305+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
-2025-06-17T16:20:02.336+09:00  INFO 12356 --- [springEx2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-06-17T16:20:02.336+09:00  INFO 12356 --- [springEx2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-06-17T16:20:02.926+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-06-17T16:20:02.937+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-17T16:20:02.937+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-06-17T16:20:02.972+09:00  INFO 12356 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
-2025-06-17T16:20:02.973+09:00  INFO 12356 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 635 ms
-2025-06-17T16:20:03.222+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-06-17T16:20:03.246+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
-2025-06-17T16:20:03.255+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 1.248 seconds (process running for 1.732)
-2025-06-17T16:24:18.579+09:00  INFO 12356 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2025-06-17T16:24:18.821+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 12356 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
-2025-06-17T16:24:18.821+09:00 DEBUG 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
-2025-06-17T16:24:18.821+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
-2025-06-17T16:24:18.943+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-06-17T16:24:18.944+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-17T16:24:18.944+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-06-17T16:24:18.955+09:00  INFO 12356 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
-2025-06-17T16:24:18.955+09:00  INFO 12356 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 132 ms
-2025-06-17T16:24:19.001+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-06-17T16:24:19.008+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
-2025-06-17T16:24:19.012+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.21 seconds (process running for 257.489)
-2025-06-17T16:24:19.014+09:00  INFO 12356 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-06-17T16:31:21.362+09:00  INFO 12356 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-06-17T16:31:21.597+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 12356 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
-2025-06-17T16:31:21.597+09:00 DEBUG 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
-2025-06-17T16:31:21.597+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
-2025-06-17T16:31:21.708+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-06-17T16:31:21.708+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-17T16:31:21.709+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-06-17T16:31:21.721+09:00  INFO 12356 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
-2025-06-17T16:31:21.721+09:00  INFO 12356 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 121 ms
-2025-06-17T16:31:21.766+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-06-17T16:31:21.773+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
-2025-06-17T16:31:21.777+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.197 seconds (process running for 680.254)
-2025-06-17T16:31:21.779+09:00  INFO 12356 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-06-17T16:34:05.759+09:00  INFO 12356 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-06-17T16:34:05.986+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 12356 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
-2025-06-17T16:34:05.986+09:00 DEBUG 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
-2025-06-17T16:34:05.986+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
-2025-06-17T16:34:06.091+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-06-17T16:34:06.092+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-17T16:34:06.092+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-06-17T16:34:06.103+09:00  INFO 12356 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
-2025-06-17T16:34:06.104+09:00  INFO 12356 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 115 ms
-2025-06-17T16:34:06.136+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-06-17T16:34:06.142+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
-2025-06-17T16:34:06.146+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.176 seconds (process running for 844.624)
-2025-06-17T16:34:06.146+09:00  INFO 12356 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-06-17T16:34:42.343+09:00  INFO 12356 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-06-17T16:34:42.597+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 12356 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
-2025-06-17T16:34:42.597+09:00 DEBUG 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
-2025-06-17T16:34:42.597+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
-2025-06-17T16:34:42.709+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-06-17T16:34:42.709+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-17T16:34:42.709+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-06-17T16:34:42.720+09:00  INFO 12356 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
-2025-06-17T16:34:42.721+09:00  INFO 12356 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 122 ms
-2025-06-17T16:34:42.760+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-06-17T16:34:42.766+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
-2025-06-17T16:34:42.769+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.189 seconds (process running for 881.247)
-2025-06-17T16:34:42.770+09:00  INFO 12356 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-06-17T16:34:57.512+09:00  INFO 12356 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-06-17T16:34:57.745+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 12356 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
-2025-06-17T16:34:57.745+09:00 DEBUG 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
-2025-06-17T16:34:57.745+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
-2025-06-17T16:34:57.843+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-06-17T16:34:57.844+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-17T16:34:57.844+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-06-17T16:34:57.855+09:00  INFO 12356 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
-2025-06-17T16:34:57.855+09:00  INFO 12356 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 108 ms
-2025-06-17T16:34:57.897+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-06-17T16:34:57.904+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
-2025-06-17T16:34:57.907+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.179 seconds (process running for 896.385)
-2025-06-17T16:34:57.909+09:00  INFO 12356 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-06-17T16:35:05.594+09:00  INFO 12356 --- [springEx2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-17T16:35:05.594+09:00  INFO 12356 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-17T16:35:05.610+09:00  INFO 12356 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-06-17T16:42:34.194+09:00  INFO 12356 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-06-17T16:42:34.422+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 12356 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
-2025-06-17T16:42:34.422+09:00 DEBUG 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
-2025-06-17T16:42:34.422+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
-2025-06-17T16:42:34.531+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-06-17T16:42:34.532+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-17T16:42:34.533+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-06-17T16:42:34.543+09:00  INFO 12356 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
-2025-06-17T16:42:34.543+09:00  INFO 12356 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 119 ms
-2025-06-17T16:42:34.581+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-06-17T16:42:34.588+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
-2025-06-17T16:42:34.592+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.187 seconds (process running for 1353.07)
-2025-06-17T16:42:34.593+09:00  INFO 12356 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-06-17T16:42:41.294+09:00  INFO 12356 --- [springEx2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-17T16:42:41.294+09:00  INFO 12356 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-17T16:42:41.295+09:00  INFO 12356 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-06-17T16:42:41.305+09:00 DEBUG 12356 --- [springEx2] [http-nio-9992-exec-1] n.dsa.web2.controller.ParamController    : param1 log = name: 이지연, age: 99, phone:01011112222
-2025-06-17T17:08:29.550+09:00  INFO 12356 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-06-17T17:08:29.787+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 12356 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
-2025-06-17T17:08:29.787+09:00 DEBUG 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
-2025-06-17T17:08:29.787+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
-2025-06-17T17:08:29.893+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-06-17T17:08:29.894+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-17T17:08:29.894+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-06-17T17:08:29.903+09:00  INFO 12356 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
-2025-06-17T17:08:29.904+09:00  INFO 12356 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 116 ms
-2025-06-17T17:08:29.949+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-06-17T17:08:29.955+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
-2025-06-17T17:08:29.959+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.189 seconds (process running for 2908.436)
-2025-06-17T17:08:29.960+09:00  INFO 12356 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-06-17T17:12:49.034+09:00  INFO 12356 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-06-17T17:12:49.284+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 12356 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
-2025-06-17T17:12:49.285+09:00 DEBUG 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
-2025-06-17T17:12:49.285+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
-2025-06-17T17:12:49.383+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-06-17T17:12:49.384+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-17T17:12:49.384+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-06-17T17:12:49.394+09:00  INFO 12356 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
-2025-06-17T17:12:49.394+09:00  INFO 12356 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 107 ms
-2025-06-17T17:12:49.425+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-06-17T17:12:49.431+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
-2025-06-17T17:12:49.435+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.164 seconds (process running for 3167.912)
-2025-06-17T17:12:49.436+09:00  INFO 12356 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-06-17T17:12:51.922+09:00  INFO 12356 --- [springEx2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-17T17:12:51.922+09:00  INFO 12356 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-17T17:12:51.923+09:00  INFO 12356 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-06-17T17:12:55.043+09:00 DEBUG 12356 --- [springEx2] [http-nio-9992-exec-3] n.dsa.web2.controller.ParamController    : param2 log = name: 이지연, age: 99, phone:01011112222
-2025-06-17T17:22:31.253+09:00  INFO 12356 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-06-17T17:22:31.488+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 12356 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
-2025-06-17T17:22:31.488+09:00 DEBUG 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
-2025-06-17T17:22:31.488+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
-2025-06-17T17:22:31.592+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-06-17T17:22:31.593+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-17T17:22:31.593+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-06-17T17:22:31.603+09:00  INFO 12356 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
-2025-06-17T17:22:31.604+09:00  INFO 12356 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 114 ms
-2025-06-17T17:22:31.651+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-06-17T17:22:31.657+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
-2025-06-17T17:22:31.661+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.188 seconds (process running for 3750.138)
-2025-06-17T17:22:31.662+09:00  INFO 12356 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-06-17T17:27:20.164+09:00  INFO 12356 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-06-17T17:27:20.404+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 12356 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
-2025-06-17T17:27:20.404+09:00 DEBUG 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
-2025-06-17T17:27:20.404+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
-2025-06-17T17:27:20.499+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-06-17T17:27:20.499+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-17T17:27:20.499+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-06-17T17:27:20.509+09:00  INFO 12356 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
-2025-06-17T17:27:20.509+09:00  INFO 12356 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 103 ms
-2025-06-17T17:27:20.516+09:00  WARN 12356 --- [springEx2] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'paramController': Lookup method resolution failed
-2025-06-17T17:27:20.516+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2025-06-17T17:27:20.520+09:00  INFO 12356 --- [springEx2] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+2025-06-18T14:23:05.889+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 11180 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T14:23:05.893+09:00 DEBUG 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T14:23:05.894+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T14:23:05.936+09:00  INFO 11180 --- [springEx2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-18T14:23:05.936+09:00  INFO 11180 --- [springEx2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-18T14:23:06.610+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T14:23:06.621+09:00  INFO 11180 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T14:23:06.621+09:00  INFO 11180 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T14:23:06.661+09:00  INFO 11180 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T14:23:06.662+09:00  INFO 11180 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 726 ms
+2025-06-18T14:23:06.954+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T14:23:06.982+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T14:23:06.990+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 1.435 seconds (process running for 1.928)
+2025-06-18T14:23:16.813+09:00  INFO 11180 --- [springEx2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-18T14:23:16.813+09:00  INFO 11180 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-18T14:23:16.815+09:00  INFO 11180 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-18T14:23:16.865+09:00 DEBUG 11180 --- [springEx2] [http-nio-9992-exec-1] n.dsa.web2.controller.LombokController   : lombok1 실행
+2025-06-18T14:23:16.865+09:00 DEBUG 11180 --- [springEx2] [http-nio-9992-exec-1] n.dsa.web2.controller.LombokController   : Person : Person(name=홍길동, age=20, phone=01011112222)
+2025-06-18T14:23:16.874+09:00 DEBUG 11180 --- [springEx2] [http-nio-9992-exec-1] n.dsa.web2.controller.LombokController   : Person2: Person(name=이순신, age=99, phone=01033334444)
+2025-06-18T14:23:23.879+09:00 DEBUG 11180 --- [springEx2] [http-nio-9992-exec-4] n.dsa.web2.controller.ParamController    : param4 log = person:Person(name=abc, age=30, phone=111)
+2025-06-18T14:30:55.402+09:00  INFO 11180 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T14:30:55.647+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 11180 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T14:30:55.647+09:00 DEBUG 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T14:30:55.648+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T14:30:55.771+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T14:30:55.773+09:00  INFO 11180 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T14:30:55.773+09:00  INFO 11180 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T14:30:55.784+09:00  INFO 11180 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T14:30:55.785+09:00  INFO 11180 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 135 ms
+2025-06-18T14:30:55.835+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T14:30:55.843+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T14:30:55.848+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.222 seconds (process running for 470.786)
+2025-06-18T14:30:55.851+09:00  INFO 11180 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T14:31:10.940+09:00  INFO 11180 --- [springEx2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-18T14:31:10.940+09:00  INFO 11180 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-18T14:31:10.940+09:00  INFO 11180 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-18T14:31:12.371+09:00 DEBUG 11180 --- [springEx2] [http-nio-9992-exec-2] n.dsa.web2.controller.ParamController    : param5 log = name: 아무개, age: 0, phone: 01011112222
+2025-06-18T14:36:29.268+09:00  INFO 11180 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T14:36:29.510+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 11180 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T14:36:29.510+09:00 DEBUG 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T14:36:29.510+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T14:36:29.628+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T14:36:29.629+09:00  INFO 11180 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T14:36:29.629+09:00  INFO 11180 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T14:36:29.639+09:00  INFO 11180 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T14:36:29.639+09:00  INFO 11180 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 127 ms
+2025-06-18T14:36:29.644+09:00  WARN 11180 --- [springEx2] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'paramController': Lookup method resolution failed
+2025-06-18T14:36:29.645+09:00  INFO 11180 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-06-18T14:36:29.650+09:00  INFO 11180 --- [springEx2] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-06-17T17:27:20.532+09:00 ERROR 12356 --- [springEx2] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+2025-06-18T14:36:29.666+09:00 ERROR 11180 --- [springEx2] [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'paramController': Lookup method resolution failed
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498) ~[spring-beans-6.1.20.jar:6.1.20]
@@ -205,18 +77,18 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.12.jar:3.3.12]
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [net.dsa.web2.controller.ParamController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@35791869]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [net.dsa.web2.controller.ParamController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@48fc7602]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.1.20.jar:6.1.20]
 	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.1.20.jar:6.1.20]
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476) ~[spring-beans-6.1.20.jar:6.1.20]
 	... 24 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: Person
+Caused by: java.lang.NoClassDefFoundError: Model
 	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
 	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[na:na]
 	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[na:na]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.1.20.jar:6.1.20]
 	... 26 common frames omitted
-Caused by: java.lang.ClassNotFoundException: Person
+Caused by: java.lang.ClassNotFoundException: Model
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -226,36 +98,513 @@ Caused by: java.lang.ClassNotFoundException: Person
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
 	... 30 common frames omitted
 
-2025-06-17T17:28:55.978+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 12356 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
-2025-06-17T17:28:55.978+09:00 DEBUG 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
-2025-06-17T17:28:55.978+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
-2025-06-17T17:28:56.072+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-06-17T17:28:56.074+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-17T17:28:56.074+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-06-17T17:28:56.085+09:00  INFO 12356 --- [springEx2] [restartedMain] o.a.c.c.C.[.[localhost].[/web2]          : Initializing Spring embedded WebApplicationContext
-2025-06-17T17:28:56.085+09:00  INFO 12356 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 105 ms
-2025-06-17T17:28:56.120+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-06-17T17:28:56.127+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
-2025-06-17T17:28:56.131+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.17 seconds (process running for 4134.608)
-2025-06-17T17:28:56.132+09:00  INFO 12356 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-06-17T17:29:08.708+09:00  INFO 12356 --- [springEx2] [http-nio-9992-exec-1] o.a.c.c.C.[.[localhost].[/web2]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-17T17:29:08.708+09:00  INFO 12356 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-17T17:29:08.709+09:00  INFO 12356 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-06-17T17:29:11.881+09:00 DEBUG 12356 --- [springEx2] [http-nio-9992-exec-2] n.dsa.web2.controller.ParamController    : param3 log = person: Person(name=이지연, age=99, phone=01011112222)
-2025-06-17T17:29:56.852+09:00  INFO 12356 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-06-17T17:29:57.091+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 12356 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
-2025-06-17T17:29:57.091+09:00 DEBUG 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
-2025-06-17T17:29:57.092+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
-2025-06-17T17:29:57.187+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
-2025-06-17T17:29:57.188+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-17T17:29:57.188+09:00  INFO 12356 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-06-17T17:29:57.197+09:00  INFO 12356 --- [springEx2] [restartedMain] o.a.c.c.C.[.[localhost].[/web2]          : Initializing Spring embedded WebApplicationContext
-2025-06-17T17:29:57.197+09:00  INFO 12356 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 104 ms
-2025-06-17T17:29:57.231+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-06-17T17:29:57.236+09:00  INFO 12356 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
-2025-06-17T17:29:57.240+09:00  INFO 12356 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.163 seconds (process running for 4195.717)
-2025-06-17T17:29:57.241+09:00  INFO 12356 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-06-17T17:43:32.491+09:00  INFO 12356 --- [springEx2] [http-nio-9992-exec-1] o.a.c.c.C.[.[localhost].[/web2]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-17T17:43:32.491+09:00  INFO 12356 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-17T17:43:32.492+09:00  INFO 12356 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-06-17T17:50:48.821+09:00  INFO 12356 --- [springEx2] [RMI TCP Connection(142)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-18T14:37:26.360+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 11180 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T14:37:26.360+09:00 DEBUG 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T14:37:26.360+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T14:37:26.478+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T14:37:26.481+09:00  INFO 11180 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T14:37:26.481+09:00  INFO 11180 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T14:37:26.491+09:00  INFO 11180 --- [springEx2] [restartedMain] o.a.c.c.C.[.[localhost].[/web2]          : Initializing Spring embedded WebApplicationContext
+2025-06-18T14:37:26.491+09:00  INFO 11180 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 130 ms
+2025-06-18T14:37:26.539+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T14:37:26.546+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T14:37:26.549+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.207 seconds (process running for 861.486)
+2025-06-18T14:37:26.550+09:00  INFO 11180 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T14:37:47.381+09:00  INFO 11180 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T14:37:47.629+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 11180 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T14:37:47.629+09:00 DEBUG 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T14:37:47.629+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T14:37:47.729+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T14:37:47.730+09:00  INFO 11180 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T14:37:47.730+09:00  INFO 11180 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T14:37:47.741+09:00  INFO 11180 --- [springEx2] [restartedMain] o.a.c.c.C.[.[localhost].[/web2]          : Initializing Spring embedded WebApplicationContext
+2025-06-18T14:37:47.741+09:00  INFO 11180 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 110 ms
+2025-06-18T14:37:47.778+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T14:37:47.785+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T14:37:47.789+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.176 seconds (process running for 882.727)
+2025-06-18T14:37:47.791+09:00  INFO 11180 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T14:37:55.356+09:00  INFO 11180 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T14:37:55.588+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 11180 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T14:37:55.588+09:00 DEBUG 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T14:37:55.588+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T14:37:55.686+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T14:37:55.687+09:00  INFO 11180 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T14:37:55.687+09:00  INFO 11180 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T14:37:55.702+09:00  INFO 11180 --- [springEx2] [restartedMain] o.a.c.c.C.[.[localhost].[/web2]          : Initializing Spring embedded WebApplicationContext
+2025-06-18T14:37:55.702+09:00  INFO 11180 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 113 ms
+2025-06-18T14:37:55.747+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T14:37:55.754+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T14:37:55.758+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.186 seconds (process running for 890.696)
+2025-06-18T14:37:55.760+09:00  INFO 11180 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T14:44:02.408+09:00  INFO 11180 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T14:44:02.657+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 11180 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T14:44:02.657+09:00 DEBUG 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T14:44:02.657+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T14:44:02.763+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T14:44:02.764+09:00  INFO 11180 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T14:44:02.764+09:00  INFO 11180 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T14:44:02.774+09:00  INFO 11180 --- [springEx2] [restartedMain] o.a.c.c.C.[.[localhost].[/web2]          : Initializing Spring embedded WebApplicationContext
+2025-06-18T14:44:02.774+09:00  INFO 11180 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 116 ms
+2025-06-18T14:44:02.812+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T14:44:02.819+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T14:44:02.822+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.182 seconds (process running for 1257.76)
+2025-06-18T14:44:02.823+09:00  INFO 11180 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T14:46:38.640+09:00  INFO 11180 --- [springEx2] [http-nio-9992-exec-1] o.a.c.c.C.[.[localhost].[/web2]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-18T14:46:38.640+09:00  INFO 11180 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-18T14:46:38.641+09:00  INFO 11180 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-18T14:47:19.260+09:00 ERROR 11180 --- [springEx2] [http-nio-9992-exec-3] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-9992-exec-3] Exception processing template "param/model": An error happened during template parsing (template: "class path resource [templates/param/model.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/param/model.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: org.attoparser.ParseException: Could not parse as expression: "{${str}" (template: "param/model" - line 11, col 7)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "{${str}" (template: "param/model" - line 11, col 7)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.performInlining(OutputExpressionInlinePreProcessorHandler.java:440) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleText(OutputExpressionInlinePreProcessorHandler.java:146) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleText(InlinedOutputExpressionMarkupHandler.java:80) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleText(HtmlMarkupHandler.java:208) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.AbstractChainedMarkupHandler.handleText(AbstractChainedMarkupHandler.java:203) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:662) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	... 50 common frames omitted
+
+2025-06-18T14:47:19.262+09:00 ERROR 11180 --- [springEx2] [http-nio-9992-exec-3] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/web2] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/param/model.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "{${str}" (template: "param/model" - line 11, col 7)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.performInlining(OutputExpressionInlinePreProcessorHandler.java:440) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleText(OutputExpressionInlinePreProcessorHandler.java:146) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleText(InlinedOutputExpressionMarkupHandler.java:80) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleText(HtmlMarkupHandler.java:208) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.AbstractChainedMarkupHandler.handleText(AbstractChainedMarkupHandler.java:203) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:662) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-06-18T14:47:21.841+09:00 ERROR 11180 --- [springEx2] [http-nio-9992-exec-4] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-9992-exec-4] Exception processing template "param/model": An error happened during template parsing (template: "class path resource [templates/param/model.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/param/model.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: org.attoparser.ParseException: Could not parse as expression: "{${str}" (template: "param/model" - line 11, col 7)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "{${str}" (template: "param/model" - line 11, col 7)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.performInlining(OutputExpressionInlinePreProcessorHandler.java:440) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleText(OutputExpressionInlinePreProcessorHandler.java:146) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleText(InlinedOutputExpressionMarkupHandler.java:80) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleText(HtmlMarkupHandler.java:208) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.AbstractChainedMarkupHandler.handleText(AbstractChainedMarkupHandler.java:203) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:662) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	... 50 common frames omitted
+
+2025-06-18T14:47:21.842+09:00 ERROR 11180 --- [springEx2] [http-nio-9992-exec-4] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/web2] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/param/model.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "{${str}" (template: "param/model" - line 11, col 7)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.performInlining(OutputExpressionInlinePreProcessorHandler.java:440) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleText(OutputExpressionInlinePreProcessorHandler.java:146) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleText(InlinedOutputExpressionMarkupHandler.java:80) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleText(HtmlMarkupHandler.java:208) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.AbstractChainedMarkupHandler.handleText(AbstractChainedMarkupHandler.java:203) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:662) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-06-18T14:48:23.749+09:00 ERROR 11180 --- [springEx2] [http-nio-9992-exec-7] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-9992-exec-7] Exception processing template "param/model": An error happened during template parsing (template: "class path resource [templates/param/model.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/param/model.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: org.attoparser.ParseException: Could not parse as expression: "{${str}" (template: "param/model" - line 11, col 7)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "{${str}" (template: "param/model" - line 11, col 7)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.performInlining(OutputExpressionInlinePreProcessorHandler.java:440) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleText(OutputExpressionInlinePreProcessorHandler.java:146) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleText(InlinedOutputExpressionMarkupHandler.java:80) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleText(HtmlMarkupHandler.java:208) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.AbstractChainedMarkupHandler.handleText(AbstractChainedMarkupHandler.java:203) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:662) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	... 50 common frames omitted
+
+2025-06-18T14:48:23.751+09:00 ERROR 11180 --- [springEx2] [http-nio-9992-exec-7] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/web2] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/param/model.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "{${str}" (template: "param/model" - line 11, col 7)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.performInlining(OutputExpressionInlinePreProcessorHandler.java:440) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleText(OutputExpressionInlinePreProcessorHandler.java:146) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleText(InlinedOutputExpressionMarkupHandler.java:80) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleText(HtmlMarkupHandler.java:208) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.AbstractChainedMarkupHandler.handleText(AbstractChainedMarkupHandler.java:203) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:662) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
