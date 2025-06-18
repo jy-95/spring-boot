@@ -608,3 +608,600 @@ org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as express
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
 	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
 
+2025-06-18T15:10:12.864+09:00  INFO 11180 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 6 class path changes (0 additions, 0 deletions, 6 modifications)
+2025-06-18T15:10:13.121+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 11180 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T15:10:13.121+09:00 DEBUG 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T15:10:13.121+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T15:10:13.228+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T15:10:13.229+09:00  INFO 11180 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T15:10:13.229+09:00  INFO 11180 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T15:10:13.240+09:00  INFO 11180 --- [springEx2] [restartedMain] o.a.c.c.C.[.[localhost].[/web2]          : Initializing Spring embedded WebApplicationContext
+2025-06-18T15:10:13.240+09:00  INFO 11180 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 117 ms
+2025-06-18T15:10:13.284+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T15:10:13.292+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T15:10:13.296+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.191 seconds (process running for 2828.234)
+2025-06-18T15:10:13.298+09:00  INFO 11180 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T15:10:38.190+09:00  INFO 11180 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 6 class path changes (0 additions, 0 deletions, 6 modifications)
+2025-06-18T15:10:38.565+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 11180 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T15:10:38.565+09:00 DEBUG 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T15:10:38.568+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T15:10:38.771+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T15:10:38.771+09:00  INFO 11180 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T15:10:38.771+09:00  INFO 11180 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T15:10:38.801+09:00  INFO 11180 --- [springEx2] [restartedMain] o.a.c.c.C.[.[localhost].[/web2]          : Initializing Spring embedded WebApplicationContext
+2025-06-18T15:10:38.801+09:00  INFO 11180 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 233 ms
+2025-06-18T15:10:38.845+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T15:10:38.845+09:00  INFO 11180 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T15:10:38.859+09:00  INFO 11180 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.342 seconds (process running for 2853.801)
+2025-06-18T15:10:38.859+09:00  INFO 11180 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T15:10:59.049+09:00  INFO 11180 --- [springEx2] [RMI TCP Connection(74)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-18T15:11:12.212+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T15:11:12.214+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T15:11:12.214+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T15:11:12.252+09:00  INFO 8112 --- [springEx2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-18T15:11:12.252+09:00  INFO 8112 --- [springEx2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-18T15:11:12.892+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T15:11:12.901+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T15:11:12.901+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T15:11:12.947+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T15:11:12.947+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 694 ms
+2025-06-18T15:11:13.234+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T15:11:13.262+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T15:11:13.270+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 1.373 seconds (process running for 1.839)
+2025-06-18T15:11:14.428+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-18T15:11:14.428+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-18T15:11:14.429+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-18T15:12:22.119+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T15:12:22.354+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T15:12:22.354+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T15:12:22.354+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T15:12:22.480+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T15:12:22.480+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T15:12:22.480+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T15:12:22.493+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T15:12:22.493+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 137 ms
+2025-06-18T15:12:22.548+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T15:12:22.556+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T15:12:22.560+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.225 seconds (process running for 71.129)
+2025-06-18T15:12:22.562+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T15:13:28.450+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-06-18T15:13:28.680+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T15:13:28.680+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T15:13:28.680+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T15:13:28.794+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T15:13:28.794+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T15:13:28.795+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T15:13:28.806+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T15:13:28.807+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 125 ms
+2025-06-18T15:13:28.860+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T15:13:28.866+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T15:13:28.870+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.207 seconds (process running for 137.439)
+2025-06-18T15:13:28.871+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T15:15:21.709+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T15:15:21.954+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T15:15:21.954+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T15:15:21.954+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T15:15:22.060+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T15:15:22.060+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T15:15:22.060+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T15:15:22.078+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T15:15:22.078+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 122 ms
+2025-06-18T15:15:22.120+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T15:15:22.126+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T15:15:22.129+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.191 seconds (process running for 250.698)
+2025-06-18T15:15:22.131+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T15:20:17.368+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T15:20:17.606+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T15:20:17.606+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T15:20:17.606+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T15:20:17.714+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T15:20:17.714+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T15:20:17.714+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T15:20:17.725+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T15:20:17.725+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 118 ms
+2025-06-18T15:20:17.764+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T15:20:17.770+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T15:20:17.773+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.183 seconds (process running for 546.343)
+2025-06-18T15:20:17.775+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T15:27:57.006+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T15:27:57.254+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T15:27:57.254+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T15:27:57.254+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T15:27:57.376+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T15:27:57.376+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T15:27:57.376+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T15:27:57.387+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T15:27:57.387+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 131 ms
+2025-06-18T15:27:57.428+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T15:27:57.435+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T15:27:57.438+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.203 seconds (process running for 1006.007)
+2025-06-18T15:27:57.439+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T15:28:31.316+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T15:28:31.551+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T15:28:31.551+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T15:28:31.551+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T15:28:31.650+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T15:28:31.651+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T15:28:31.651+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T15:28:31.661+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T15:28:31.662+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 110 ms
+2025-06-18T15:28:31.701+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T15:28:31.707+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T15:28:31.711+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.175 seconds (process running for 1040.28)
+2025-06-18T15:28:31.712+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T15:34:17.896+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T15:34:18.196+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T15:34:18.197+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T15:34:18.197+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T15:34:18.309+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T15:34:18.310+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T15:34:18.310+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T15:34:18.321+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T15:34:18.321+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 123 ms
+2025-06-18T15:34:18.364+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T15:34:18.369+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T15:34:18.374+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.197 seconds (process running for 1386.943)
+2025-06-18T15:34:18.375+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T15:49:52.676+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-18T15:49:52.677+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-18T15:49:52.678+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-18T15:50:52.918+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T15:50:53.165+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T15:50:53.165+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T15:50:53.165+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T15:50:53.279+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T15:50:53.279+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T15:50:53.280+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T15:50:53.293+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T15:50:53.293+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 127 ms
+2025-06-18T15:50:53.348+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T15:50:53.356+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T15:50:53.359+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.209 seconds (process running for 2381.928)
+2025-06-18T15:50:53.360+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T15:50:56.994+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-18T15:50:56.994+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-18T15:50:56.995+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-18T15:52:43.072+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T15:52:43.318+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T15:52:43.319+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T15:52:43.319+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T15:52:43.418+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T15:52:43.418+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T15:52:43.419+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T15:52:43.429+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T15:52:43.429+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 109 ms
+2025-06-18T15:52:43.469+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T15:52:43.475+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T15:52:43.479+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.176 seconds (process running for 2492.048)
+2025-06-18T15:52:43.480+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T15:58:11.764+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-18T15:58:11.764+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-18T15:58:11.769+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-06-18T15:58:42.205+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-06-18T15:58:42.458+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T15:58:42.458+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T15:58:42.459+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T15:58:42.576+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T15:58:42.576+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T15:58:42.576+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T15:58:42.587+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T15:58:42.588+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 128 ms
+2025-06-18T15:58:42.637+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T15:58:42.644+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T15:58:42.648+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.207 seconds (process running for 2851.217)
+2025-06-18T15:58:42.650+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T15:58:45.258+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-18T15:58:45.260+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-18T15:58:45.260+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-18T15:58:45.266+09:00 ERROR 8112 --- [springEx2] [http-nio-9992-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/web2] threw exception [Handler dispatch failed: java.lang.Error: Unresolved compilation problem: 
+	The method getPhone() is undefined for the type PersonForm
+] with root cause
+
+java.lang.Error: Unresolved compilation problem: 
+	The method getPhone() is undefined for the type PersonForm
+
+	at net.dsa.web2.controller.ParamController.validation(ParamController.java:123) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.20.jar:6.1.20]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.20.jar:6.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-06-18T15:58:54.294+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-06-18T15:58:54.530+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T15:58:54.531+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T15:58:54.531+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T15:58:54.625+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T15:58:54.625+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T15:58:54.625+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T15:58:54.636+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T15:58:54.636+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 104 ms
+2025-06-18T15:58:54.676+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T15:58:54.682+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T15:58:54.686+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.17 seconds (process running for 2863.255)
+2025-06-18T15:58:54.687+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T16:21:22.347+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-06-18T16:21:22.593+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T16:21:22.593+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T16:21:22.593+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T16:21:22.699+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T16:21:22.699+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T16:21:22.699+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T16:21:22.709+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T16:21:22.710+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 116 ms
+2025-06-18T16:21:22.760+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T16:21:22.768+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T16:21:22.771+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.193 seconds (process running for 4211.341)
+2025-06-18T16:21:22.773+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T16:22:37.159+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T16:22:37.404+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T16:22:37.404+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T16:22:37.404+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T16:22:37.503+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T16:22:37.503+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T16:22:37.503+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T16:22:37.519+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T16:22:37.519+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 113 ms
+2025-06-18T16:22:37.562+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T16:22:37.568+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T16:22:37.571+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.183 seconds (process running for 4286.14)
+2025-06-18T16:22:37.572+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T16:22:43.105+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T16:22:43.346+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T16:22:43.346+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T16:22:43.346+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T16:22:43.443+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T16:22:43.443+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T16:22:43.443+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T16:22:43.454+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T16:22:43.454+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 107 ms
+2025-06-18T16:22:43.493+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T16:22:43.500+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T16:22:43.503+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.172 seconds (process running for 4292.072)
+2025-06-18T16:22:43.504+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T16:30:23.939+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T16:30:24.179+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T16:30:24.179+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T16:30:24.179+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T16:30:24.278+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T16:30:24.278+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T16:30:24.279+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T16:30:24.289+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T16:30:24.289+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 109 ms
+2025-06-18T16:30:24.329+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T16:30:24.341+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T16:30:24.344+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.179 seconds (process running for 4752.914)
+2025-06-18T16:30:24.345+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T16:32:07.096+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T16:32:07.336+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T16:32:07.336+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T16:32:07.337+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T16:32:07.434+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T16:32:07.434+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T16:32:07.434+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T16:32:07.451+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T16:32:07.451+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 113 ms
+2025-06-18T16:32:07.491+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T16:32:07.499+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T16:32:07.502+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.179 seconds (process running for 4856.071)
+2025-06-18T16:32:07.503+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T16:32:32.792+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-18T16:32:32.792+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-18T16:32:32.793+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-18T16:35:55.600+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T16:35:55.846+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T16:35:55.846+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T16:35:55.847+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T16:35:55.944+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T16:35:55.945+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T16:35:55.945+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T16:35:55.955+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T16:35:55.955+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 107 ms
+2025-06-18T16:35:55.998+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T16:35:56.004+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T16:35:56.008+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.176 seconds (process running for 5084.576)
+2025-06-18T16:35:56.009+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T16:36:24.574+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-18T16:36:24.574+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-18T16:36:24.575+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-18T16:36:24.576+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-1] n.dsa.web2.controller.SessionController  : session 정보: abc
+2025-06-18T16:36:32.847+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-5] n.dsa.web2.controller.SessionController  : session 정보: null
+2025-06-18T16:45:03.940+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T16:45:04.178+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T16:45:04.179+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T16:45:04.179+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T16:45:04.285+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T16:45:04.285+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T16:45:04.285+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T16:45:04.296+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T16:45:04.296+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 116 ms
+2025-06-18T16:45:04.344+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T16:45:04.351+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T16:45:04.354+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.191 seconds (process running for 5632.923)
+2025-06-18T16:45:04.355+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T16:47:05.166+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-18T16:47:05.166+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-18T16:47:05.167+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-18T17:13:09.083+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T17:13:09.330+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T17:13:09.330+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T17:13:09.330+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T17:13:09.437+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T17:13:09.437+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T17:13:09.437+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T17:13:09.448+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T17:13:09.448+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 116 ms
+2025-06-18T17:13:09.498+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T17:13:09.504+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T17:13:09.508+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.192 seconds (process running for 7318.077)
+2025-06-18T17:13:09.508+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T17:15:24.127+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T17:15:24.366+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T17:15:24.366+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T17:15:24.366+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T17:15:24.461+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T17:15:24.461+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T17:15:24.461+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T17:15:24.471+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T17:15:24.471+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 104 ms
+2025-06-18T17:15:24.510+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T17:15:24.517+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T17:15:24.520+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.167 seconds (process running for 7453.088)
+2025-06-18T17:15:24.520+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T17:16:03.793+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T17:16:04.050+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T17:16:04.050+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T17:16:04.050+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T17:16:04.153+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T17:16:04.154+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T17:16:04.154+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T17:16:04.166+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T17:16:04.166+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 115 ms
+2025-06-18T17:16:04.208+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T17:16:04.216+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T17:16:04.219+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.185 seconds (process running for 7492.787)
+2025-06-18T17:16:04.220+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T17:16:11.676+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-18T17:16:11.676+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-18T17:16:11.691+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-18T17:16:25.784+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-3] n.dsa.web2.controller.SessionController  : 로그인 폼에서 입력한 값: abc/123
+2025-06-18T17:16:38.809+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-9] n.dsa.web2.controller.SessionController  : 로그인 폼에서 입력한 값: abc/123
+2025-06-18T17:19:15.666+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T17:19:15.916+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T17:19:15.916+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T17:19:15.916+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T17:19:16.013+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T17:19:16.014+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T17:19:16.014+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T17:19:16.023+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T17:19:16.023+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 106 ms
+2025-06-18T17:19:16.060+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T17:19:16.066+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T17:19:16.070+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.168 seconds (process running for 7684.638)
+2025-06-18T17:19:16.071+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T17:19:37.983+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T17:19:38.230+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T17:19:38.230+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T17:19:38.230+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T17:19:38.321+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T17:19:38.321+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T17:19:38.321+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T17:19:38.332+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T17:19:38.332+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 101 ms
+2025-06-18T17:19:38.369+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T17:19:38.376+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T17:19:38.379+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.163 seconds (process running for 7706.948)
+2025-06-18T17:19:38.380+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T17:24:38.794+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T17:24:39.051+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T17:24:39.051+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T17:24:39.051+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T17:24:39.153+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T17:24:39.153+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T17:24:39.153+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T17:24:39.163+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T17:24:39.163+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 111 ms
+2025-06-18T17:24:39.210+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T17:24:39.216+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T17:24:39.219+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.183 seconds (process running for 8007.789)
+2025-06-18T17:24:39.220+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T17:24:42.075+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-18T17:24:42.075+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-18T17:24:42.075+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-18T17:24:45.009+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-2] n.dsa.web2.controller.SessionController  : 로그인 폼에서 입력한 값: abc/123
+2025-06-18T17:24:46.642+09:00  WARN 8112 --- [springEx2] [http-nio-9992-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type String is not present]
+2025-06-18T17:24:53.680+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-8] n.dsa.web2.controller.SessionController  : 로그인 폼에서 입력한 값: abc/123
+2025-06-18T17:39:26.996+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T17:39:27.250+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T17:39:27.250+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T17:39:27.250+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T17:39:27.356+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T17:39:27.356+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T17:39:27.356+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T17:39:27.366+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T17:39:27.366+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 115 ms
+2025-06-18T17:39:27.415+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T17:39:27.422+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T17:39:27.425+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.189 seconds (process running for 8895.994)
+2025-06-18T17:39:27.426+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T17:39:30.713+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-18T17:39:30.713+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-18T17:39:30.714+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-18T17:39:39.963+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-7] n.dsa.web2.controller.SessionController  : 로그인 폼에서 입력한 값: abc/123
+2025-06-18T17:42:58.687+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T17:42:58.943+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T17:42:58.943+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T17:42:58.943+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T17:42:59.047+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T17:42:59.048+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T17:42:59.048+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T17:42:59.059+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/web2]   : Initializing Spring embedded WebApplicationContext
+2025-06-18T17:42:59.059+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 113 ms
+2025-06-18T17:42:59.066+09:00  WARN 8112 --- [springEx2] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionController' defined in file [C:\spring\scit47_B_spring_workspace\springEx2\bin\main\net\dsa\web2\controller\SessionController.class]: Failed to instantiate [net.dsa.web2.controller.SessionController]: Constructor threw exception
+2025-06-18T17:42:59.066+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-06-18T17:42:59.071+09:00  INFO 8112 --- [springEx2] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-18T17:42:59.084+09:00 ERROR 8112 --- [springEx2] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionController' defined in file [C:\spring\scit47_B_spring_workspace\springEx2\bin\main\net\dsa\web2\controller\SessionController.class]: Failed to instantiate [net.dsa.web2.controller.SessionController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337) ~[spring-beans-6.1.20.jar:6.1.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-6.1.20.jar:6.1.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.20.jar:6.1.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.20.jar:6.1.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.20.jar:6.1.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.20.jar:6.1.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.20.jar:6.1.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.20.jar:6.1.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.20.jar:6.1.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.20.jar:6.1.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.20.jar:6.1.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.12.jar:3.3.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:755) ~[spring-boot-3.3.12.jar:3.3.12]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.12.jar:3.3.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.12.jar:3.3.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1364) ~[spring-boot-3.3.12.jar:3.3.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1353) ~[spring-boot-3.3.12.jar:3.3.12]
+	at net.dsa.web2.SpringEx2Application.main(SpringEx2Application.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.12.jar:3.3.12]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [net.dsa.web2.controller.SessionController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.20.jar:6.1.20]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:94) ~[spring-beans-6.1.20.jar:6.1.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1331) ~[spring-beans-6.1.20.jar:6.1.20]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at net.dsa.web2.controller.SessionController.<init>(SessionController.java:109) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195) ~[spring-beans-6.1.20.jar:6.1.20]
+	... 24 common frames omitted
+
+2025-06-18T17:43:32.205+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T17:43:32.205+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T17:43:32.206+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T17:43:32.313+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T17:43:32.314+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T17:43:32.314+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T17:43:32.325+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[.[localhost].[/web2]          : Initializing Spring embedded WebApplicationContext
+2025-06-18T17:43:32.325+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 118 ms
+2025-06-18T17:43:32.371+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T17:43:32.377+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T17:43:32.381+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.19 seconds (process running for 9140.95)
+2025-06-18T17:43:32.382+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T17:43:33.823+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.a.c.c.C.[.[localhost].[/web2]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-18T17:43:33.823+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-18T17:43:33.824+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-18T17:43:40.922+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-5] n.dsa.web2.controller.SessionController  : 로그인 폼에서 입력한 값: sadf/asdf
+2025-06-18T17:43:40.923+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-5] n.dsa.web2.controller.SessionController  : 로그인되지 않았습니다
+2025-06-18T17:43:45.447+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-6] n.dsa.web2.controller.SessionController  : 로그인 폼에서 입력한 값: abc/1
+2025-06-18T17:43:45.447+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-6] n.dsa.web2.controller.SessionController  : 로그인되지 않았습니다
+2025-06-18T17:43:48.325+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-7] n.dsa.web2.controller.SessionController  : 로그인 폼에서 입력한 값: abc/123
+2025-06-18T17:43:50.579+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-9] n.dsa.web2.controller.SessionController  : id: abc
+2025-06-18T17:43:50.579+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-9] n.dsa.web2.controller.SessionController  : 로그인 ID가 없습니다.
+2025-06-18T17:43:53.001+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-1] n.dsa.web2.controller.SessionController  : id: abc
+2025-06-18T17:43:53.001+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-1] n.dsa.web2.controller.SessionController  : 로그인 ID가 없습니다.
+2025-06-18T17:43:53.422+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-3] n.dsa.web2.controller.SessionController  : id: abc
+2025-06-18T17:43:53.422+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-3] n.dsa.web2.controller.SessionController  : 로그인 ID가 없습니다.
+2025-06-18T17:43:53.597+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-5] n.dsa.web2.controller.SessionController  : id: abc
+2025-06-18T17:43:53.597+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-5] n.dsa.web2.controller.SessionController  : 로그인 ID가 없습니다.
+2025-06-18T17:43:53.768+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-7] n.dsa.web2.controller.SessionController  : id: abc
+2025-06-18T17:43:53.768+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-7] n.dsa.web2.controller.SessionController  : 로그인 ID가 없습니다.
+2025-06-18T17:43:53.932+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-9] n.dsa.web2.controller.SessionController  : id: abc
+2025-06-18T17:43:53.932+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-9] n.dsa.web2.controller.SessionController  : 로그인 ID가 없습니다.
+2025-06-18T17:44:01.244+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-2] n.dsa.web2.controller.SessionController  : 로그인 폼에서 입력한 값: abc/123
+2025-06-18T17:44:02.184+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-4] n.dsa.web2.controller.SessionController  : id: abc
+2025-06-18T17:44:02.184+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-4] n.dsa.web2.controller.SessionController  : 로그인 ID가 없습니다.
+2025-06-18T17:44:03.674+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-8] n.dsa.web2.controller.SessionController  : id: null
+2025-06-18T17:44:03.674+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-8] n.dsa.web2.controller.SessionController  : 로그인 ID가 없습니다.
+2025-06-18T17:44:40.756+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-9] n.dsa.web2.controller.SessionController  : 로그인 폼에서 입력한 값: abc/123
+2025-06-18T17:44:42.289+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-1] n.dsa.web2.controller.SessionController  : id: abc
+2025-06-18T17:44:42.289+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-1] n.dsa.web2.controller.SessionController  : 로그인 ID가 없습니다.
+2025-06-18T17:44:43.256+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-3] n.dsa.web2.controller.SessionController  : id: abc
+2025-06-18T17:44:43.256+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-3] n.dsa.web2.controller.SessionController  : 로그인 ID가 없습니다.
+2025-06-18T17:44:43.681+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-5] n.dsa.web2.controller.SessionController  : id: abc
+2025-06-18T17:44:43.681+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-5] n.dsa.web2.controller.SessionController  : 로그인 ID가 없습니다.
+2025-06-18T17:45:04.672+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T17:45:04.942+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T17:45:04.942+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T17:45:04.942+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T17:45:05.069+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T17:45:05.069+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T17:45:05.069+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T17:45:05.081+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[.[localhost].[/web2]          : Initializing Spring embedded WebApplicationContext
+2025-06-18T17:45:05.081+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 138 ms
+2025-06-18T17:45:05.140+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T17:45:05.149+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T17:45:05.154+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.228 seconds (process running for 9233.723)
+2025-06-18T17:45:05.155+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T17:45:06.380+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.a.c.c.C.[.[localhost].[/web2]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-18T17:45:06.381+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-18T17:45:06.381+09:00  INFO 8112 --- [springEx2] [http-nio-9992-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-18T17:45:06.382+09:00 DEBUG 8112 --- [springEx2] [http-nio-9992-exec-1] n.dsa.web2.controller.SessionController  : id: abc
+2025-06-18T17:45:34.131+09:00  INFO 8112 --- [springEx2] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-18T17:45:34.377+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Starting SpringEx2Application using Java 17.0.10 with PID 8112 (C:\spring\scit47_B_spring_workspace\springEx2\bin\main started by user in C:\spring\scit47_B_spring_workspace\springEx2)
+2025-06-18T17:45:34.377+09:00 DEBUG 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Running with Spring Boot v3.3.12, Spring v6.1.20
+2025-06-18T17:45:34.377+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : No active profile set, falling back to 1 default profile: "default"
+2025-06-18T17:45:34.472+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9992 (http)
+2025-06-18T17:45:34.472+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-18T17:45:34.472+09:00  INFO 8112 --- [springEx2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-18T17:45:34.482+09:00  INFO 8112 --- [springEx2] [restartedMain] o.a.c.c.C.[.[localhost].[/web2]          : Initializing Spring embedded WebApplicationContext
+2025-06-18T17:45:34.482+09:00  INFO 8112 --- [springEx2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 103 ms
+2025-06-18T17:45:34.517+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-18T17:45:34.524+09:00  INFO 8112 --- [springEx2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9992 (http) with context path '/web2'
+2025-06-18T17:45:34.527+09:00  INFO 8112 --- [springEx2] [restartedMain] net.dsa.web2.SpringEx2Application        : Started SpringEx2Application in 0.161 seconds (process running for 9263.095)
+2025-06-18T17:45:34.528+09:00  INFO 8112 --- [springEx2] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-18T18:28:02.572+09:00  INFO 8112 --- [springEx2] [RMI TCP Connection(309)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
