@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- 
+	타임리프를 사용하기 위한 네임스페이스
+	- 네임스페이스는 이름 충돌을 방지하고 XML 문서 내에서 요소와 속성을
+	  고유하게 식별할 수 있도록 도와주는 XML 표준 속성.
+	  ex. xmls:prefix="URI" 형식으로 사용
+	- prefix는 네임스페이스를 참조하는 접두사, URI는 고유 식별자
+
+ -->
+<html xmlns:th="http://thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<body>
+	<h1>Thymeleaf 문법</h1>
+	
+	<h4>* 값 출력</h4>
+	<p>[[${str}]]</p>
+	<p>[[${num}]]</p>
+	<p>[[${person}]]</p>
+	<p>[[${tag}]]</p>
+	<p>[[${url}]]</p>
+	
+	<hr>
+	<p th:text="${str}">테스트 문자열</p> 
+	<!-- 위 코드의 경우 타임리프가 우선순위가 높아서 '문자열' 즉 str 값을 가져온다. -->
+	<p th:text="${#strings.defaultString(str1, '테스트 문자열')}"></p>
+	<!-- #strings는 String 객체를 의미한다. String 메서드를 사용할 수 있게 해준다. str1은 작성한 적이 없으므로 후에 적어둔 디폴트 값(뒤에 적힌 '테스트 문자열')을 출력한다. -->
+	<p><input type="text" th:value="${str}"></p>
+	<p><span th:text="${num}">000</span>원</p>
+	
+</body>
+</html>

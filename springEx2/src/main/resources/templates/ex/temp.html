@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<script>
+	/*
+	
+	window.onload = function(){
+	// 저장된 값을 불러오기
+	let name = document.querySelector('#name');
+	name.addEventListener('input', function(){
+		sessionStorage.setItem('name', name.value);
+	});
+	
+	let message = document.querySelector('#message');
+	message.addEventListener('input', function(){
+		sessionStorage.setItem('message', message.value);
+	});
+	
+	if (sessionStorage.getItem("name")) {
+		  name.value = sessionStorage.getItem("name");
+	}
+	
+	if (sessionStorage.getItem("message")){
+			message.value = sessionStorage.getItem("message");
+	}
+	}
+	*/
+	
+	// 선생님 버젼
+	window.onload = function(){
+		// 저장된 값을 불러오기
+		document.querySelector('#name').value = sessionStorage.getItem('name') || "";
+		document.querySelector('#message').value = sessionStorage.getItem('message') || "";
+		
+		// 입력할 때 마다 저장
+		document.querySelector('#name').addEventListener('input', function(){
+			let value = document.querySelector('#name').value;
+			sessionStorage.setItem('name', value);
+		});
+		document.querySelector('#message').addEventListener('input', (e) => {
+			sessionStorage.setItem('message', e.target.value);
+		});
+		}
+</script>
+
+<body>
+	<h1>문의 하기</h1>
+	<form>
+		이름: <input type="text" id="name"><br>
+		메시지: <input type="text" id="message"><br>
+		<button type="submit">보내기</button>
+	</form>
+</body>
+</html>

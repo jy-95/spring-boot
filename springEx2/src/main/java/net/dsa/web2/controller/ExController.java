@@ -87,5 +87,14 @@ public class ExController {
 		return "ex/count";
 	}
 	
+	@GetMapping("darkmode")
+	public String darkmode() {
+		return "ex/darkmode";
+	}
+	
+	@GetMapping("temp")
+	public String temp() {
+		return "ex/temp";
+	}
 		
 }

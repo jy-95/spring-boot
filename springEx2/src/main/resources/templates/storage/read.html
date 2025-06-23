@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script>
+		window.onload = function(){
+			// 데이터 읽기
+			let code1 = localStorage.getItem('code');	// 값을 불러옴(get)
+			let code2 = sessionStorage.getItem('code');
+			
+			let div1 = document.querySelector('#div1');
+			let div2 = document.querySelector('#div2');
+			
+			div1.innerHTML = code1;
+			div2.innerHTML = code2;
+			
+			let div3 = document.querySelector('#div3');
+			div3.innerHTML = '<marquee>안녕하세요</marquee>';	
+			// innerHTML로 넣었기에 텍스트 형식이지만 html 형식으로 넣으면 태그가 작동할 수 있다.
+		}
+	</script>
+</head>
+<body>
+
+	<div id="div1"></div>
+	<div id="div2"></div>
+	<div id="div3"></div>
+
+</body>
+</html>
