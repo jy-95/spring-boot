@@ -30,5 +30,101 @@
 	<p><input type="text" th:value="${str}"></p>
 	<p><span th:text="${num}">000</span>원</p>
 	
+	<hr>
+	<h4>태그 출력</h4>
+	<!-- text : 문자열 형식으로 출력 -->
+	<p th:text="${tag}"></p>
+	<!-- utext : HTML 형식으로 출력 -->
+	<p th:utext="${tag}"></p>
+	
+	<hr>
+	<h4>* 연산자</h4>
+	<p>[[${num gt 0}]]</p>
+	<!-- gt = grater then -->
+	<p th:text="${num}"></p>
+	<!-- 산술연산자 : + - * / % -->
+	<p th:text="${num + 1}"></p>
+	<!-- 비교연산자 : < > <= >= == !=, lt gt le ge eq ne -->
+	<p th:text="${num > 100}"></p>
+	<p th:text="${num gt 100}"></p>
+	<!-- 논리연산자 : and or not -->
+	<p th:text="${num ge 1 and num le 100}"></p>
+	
+	<hr>
+	<h4>경로 생성과 하이퍼링크</h4>
+	<p><a href="https://naver.com" th:href = "'https://nate.com'">네이버로 가기</a></p>
+	<!-- 타임리프 문법으로 적힌게 더 우선순위가 높다. -->
+	<p><a th:href="${url}">구글로 가기</a></p>
+	<p>[[@{/param/view1}]]</p>
+	<p> <a th:href="@{/param/view1}">페이지 이동</a></p>
+	
+	<hr>
+	<h4>이미지 출력</h4>
+	<p><img src="" th:src="@{/image/ccc.jpg}" alt="불러온 이미지"></p>
+	
+	<hr>
+	<h4>객체 출력</h4>
+	<p>[[${Person}]]</p>
+	<ul th:object="${person}">
+		<li th:text="*{name}">이름</li>
+		<li th:text= "${person.phone}">핸드폰</li>
+		</ul>
+		
+	<hr>
+	<h4>변수 출력</h4>
+	<p th:text="${num}"></p>
+	<p th:text="${dum}"></p>
+	<p th:text="${dum2}"></p>
+	<p th:text="${date}"></p>
+	
+	<hr>
+	<h4>숫자 포매팅</h4>
+	<p th:text="${#numbers.formatInteger(inum, 10)}"></p>
+	<!-- inum을 10자리로 안에 적겠다 -->
+	<p th:text="${#numbers.formatInteger(inum, 3, 'COMMA')}"></p>
+	<!-- inum의 3자리마다 콤마를 넣겠다 -->
+	<p th:text="${#numbers.formatDecimal(dnum, 3, 'COMMA', 2, 'POINT')}"></p>
+	<!-- inum의 3자리마다 콤마, 소수부는 2자리까지, 소수점은 점(.)으로 표시하겠다 -->
+	<p th:text="${#numbers.formatPercent(dnum2, 0, 2)}"></p>
+	<!-- dnum2의 값을 백분율(%)로 변환하여 정수부는 최소 0자리, 소수부는 최대 2자리까지 출력 -->
+	<p th:text="${#numbers.formatPercent(100000.555, 10, 1)}"></p>
+	
+	<hr>
+	<h4>날짜 포매팅</h4>
+	<p th:text="${#dates.format(date, 'yyyy/MM/dd HH:mm')}"></p>
+	<p th:text="${#dates.format(date, 'yyyy/MMM/dd hh:mm')}"></p>
+	
+	<hr>
+	<h4>문자열</h4>
+	<p th:text="${str + 'abcd'}"></p>
+	<p th:text="|${str} s  s    sss    sss|"></p>
+	<p th:text="str + 'abcd'"></p>
+	<p th:text="${str == '문자열'}"></p>
+	<p th:text="${str != '문자열'}"></p>
+	
+	<h4>문자열 함수</h4>
+	<p th:text="${#strings.isEmpty(str)}"></p>
+	<p th:text="${#strings.substring(str, 1, 2)}"></p>
+	<p th:text="${values}"></p>
+	<p th:text="${#strings.listSplit(values, ',')}"></p>
+	<p th:text="${#strings.listSplit(values, ',')[0]}"></p>
+	
+	<h3>제어문</h3>
+	<h4>조건문</h4>
+	<!-- if: 조건이 true면 -->
+	<div th:if="${str.equals('문자열')}">true면 보이는 부분</div>
+	<div th:if="${not str.equals('문자열')}">false면 보이는 부분</div>
+	<div th:if="${str == '문자열'}">==비교, true면 보이는 부분</div>
+	<!-- unless: 조건이 false면 -->
+	<div th:unless="${str == '문자열'}">==비교, false면 보이는 부분</div>
+	<span th:unless="${str == '문자열' ? 'true' : 'false'}"></span>
+	
+	<hr>
+	<div th:switch="${num}">
+		<p th:case="100">num은 100입니다.</p>
+		<p th:case="200">num은 200입니다.</p>
+		<p th:case="*">num은 그 밖의 숫자입니다.</p>
+		<!-- "*"는 디폴트를 의미한다. -->
+	</div>
 </body>
 </html>

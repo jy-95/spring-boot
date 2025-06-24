@@ -1,6 +1,7 @@
 package net.dsa.web2.controller;
 
 import java.util.Calendar;
+import java.util.List;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
+import net.dsa.web2.dto.Student;
 
 @Controller
 @Slf4j
@@ -95,6 +97,18 @@ public class ExController {
 	@GetMapping("temp")
 	public String temp() {
 		return "ex/temp";
+	}
+	
+	@GetMapping("thymeleaf")
+	public String thymeleafPrint(Model model) {
+		List<Student> list = List.of(
+			new Student("홍길동", 20, "010-1111-2222", 30),
+			new Student("김철수", 21, "010-3333-4444", 90),
+			new Student("이영희", 22, "010-5555-6666", 65)
+		);
+		model.addAttribute("studentList",list);
+				
+		return "ex/print";
 	}
 		
 }

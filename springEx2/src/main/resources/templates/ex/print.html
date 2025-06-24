@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>  
+	<!-- <style>
+		table {
+			margin-botton: 10px;
+			width : 80%;
+		}
+		table, th, td{
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		td, th{
+			width: auto;
+			height: 80px;
+			text-align: center;
+		}
+	</style>
+	 -->
+	<style>
+		body{
+			background-color : #f9f9f9;
+			padding: 20px;
+		}
+		table{
+			width: 500px;
+			border-collapse: collapse;
+			margin-top: 15px;
+		}
+		table, th, td{
+			border: 1px solid #ccc;
+		}
+		th, td{
+			padding: 10px;
+			text-align: center;
+		}
+		th{
+			background-color: #f0f0f0;
+		}
+		 .fail{
+         color: red;
+         font-weight: bold;
+      	}
+	      .pass{color: green;}
+	      .no-students {color: gray;}
+   </style>
+	
+</head>
+<body>
+	<h1>[ 학생목록 ]</h1>
+	<!-- 
+	<table>
+	
+	
+	 	<tr>
+	 		<th>번호</th>
+	 		<th>이름</th>
+	 		<th>나이</th>
+	 		<th>핸드폰 번호</th>
+	 		<th>성적</th>
+	 	</tr>
+	 	<tr th:each="student, status : ${studentList}">
+	 	-->
+	 	<!-- 첫번째가 객체, 두번째가 정보값 -->
+	 	<!--  
+	 		<td th:text="${status.count}"></td>
+	 		<td th:text="${student.name}"></td>
+	 		<td th:text="${student.age}"></td>
+	 		<td th:text="${student.phone}"></td>
+	 		<td th:text="${student.grade}" th:style="${student.grade gt 60 ? 'color:green' : 
+	 													 'font-weight: bold; color:red'}"></td>
+	 		
+	 	</tr>
+	 	
+	 </table>
+	 --> 
+	 
+	 <p class="no-students" th:if="${studentList == null or studentList.isEmpty()}">학생이 없습니다.</p>
+	 
+	 <table th:if="${studentList != null and !studentList.isEmpty()}">
+	 	<thead>
+	 		<tr>
+	 			<th>번호</th>
+	 			<th>이름</th>
+	 			<th>나이</th>
+	 			<th>핸드폰 번호</th>
+	 			<th>성적</th>
+	 		</tr>
+	 	</thead>
+	 	<tbody>
+	 		<tr th:each="student, stat : ${studentList}">
+	 			<td th:text="${stat.count}">순서</td>
+	 			<td th:text="${student.name}">이름</td>
+	 			<td th:text="${student.age}">나이</td>
+	 			<td th:text="${student.phone}">전화번호</td>
+	 			<td th:text="${student.grade}"
+	 				th:classappend="${student.grade lt 60} ? 'fail' : 'pass'">점수</td>
+	 		</tr>	
+	 	</tbody>		
+	 </table>
+ 
+</body>
+</html>
