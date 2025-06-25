@@ -12,4 +12,12 @@ public class MemberService {
 
 	//회원목록
 	private List<Member> memberList = new ArrayList<>();
+	
+	public void addMember(Member newMember) {
+		memberList.add(newMember);
+	}
+	
+	public List<Member> getMemberList(){
+		return memberList;
+	}
 }

@@ -1,5 +1,8 @@
 package net.dsa.ex2.controller;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -8,11 +11,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
+import net.dsa.ex2.dto.Member;
+import net.dsa.ex2.service.MemberService;
 
 @Controller
 @Slf4j
 @RequestMapping("session")
 public class SessionController {
+	
+	@Autowired
+	MemberService ms;
 
 	
 	@GetMapping("login")
@@ -24,16 +32,24 @@ public class SessionController {
 	public String loginProcess(
 			HttpSession session,
 			@RequestParam("id") String id,
-			@RequestParam("password") String pw
+			@RequestParam("pw") String pw
 			) {
 		
-		if(id.equals("abc") && pw.equals("123")) {
+		if(id.equals("aaa") && pw.equals("111")) { // master route
 			session.setAttribute("loginId", id);
-			return "redirect:/";
-		} else {
-			log.debug("로그인되지 않았습니다");
-			return "session/login";
+			return "redirect:/"; 
 		}
+		
+		List<Member> memberList = ms.getMemberList();
+		for(Member member : memberList) {
+			if(member.getId().equals(id) && member.getPw().equals(pw)) {
+				session.setAttribute("loginId", id);
+				return "redirect:/"; 
+			}
+		}
+		
+		log.debug("로그인되지 않았습니다");
+		return "session/login";
 		
 	}
 	

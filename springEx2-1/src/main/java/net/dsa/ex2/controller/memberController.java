@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -37,13 +38,17 @@ public class memberController {
 //	}
 	
 	@PostMapping("memberJoin")
-	public String memberJoin(Member p, HttpSession session) {
-		session.setAttribute("member", p);
+	public String memberJoin(Member p) {		
+		log.debug("param3 log = person: {}",p);
+		// Require server-side validation, but ignore
+		
+		ms.addMember(p);
 		return "redirect:/";
 	}
 	
 	@GetMapping("list")
-	public String list() {
+	public String getList(Model model) {
+		model.addAttribute("memberList",ms.getMemberList());
 		
 		return "member/list";
 	}
