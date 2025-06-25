@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="thymeleaf.org">
 <head>
 	<meta charset="UTF-8">
 	<title>Insert title here</title>
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
 </head>
 <body>
 
@@ -16,6 +17,8 @@
 	<div th:replace="~{layout/header :: header}"></div>
 	<!-- th:replace 뜻 = div 태그가 없어지고 header라는 태그가 온다는 뜻 -->
 	
-	<h1>홈페이지에 오신 것을 환영합니다</h1>
+	
+	<h1 class="pageTitle"><span th:if="${session.loginId != null}" th:text="${session.loginId}+'님 '" class="displayId"></span>홈페이지에 오신 것을 환영합니다</h1>
+	
 </body>
 </html>

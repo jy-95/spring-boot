@@ -1,16 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="thymeleaf.org">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
 </head>
 <body>
-	<h1>[ 로그인 ]</h1>
-		<form action="login" method="post">
-			ID <input type="text" name="id">	<br>
-			PW <input type="password" name="password">	<br>
-				<input type="submit" value="로그인하기">
+	<div th:replace="~{layout/header :: header}"></div>
+	<div class="container">
 	
-		</form>
+	<h1 class="pageTitle">로그인</h1>
+	<form action="login" method="post">
+	
+	<div class="inputWithLabel">
+	<label for="inputId">ID</label>
+	<input type="text" name="id" id="inputId">
+	</div>
+	<div class="inputWithLabel">
+	<label for="inputPw">PW</label>
+	<input type="password" name="pw" id="inputPw">
+	</div>
+	<div class="inputCheckbox">
+		<input type="checkbox" name="remId" id="remId">
+		<label for="remId">ID기억하기</label>
+	</div>
+	<input type="submit" value="가입">
+	</form>
+	
+	
+	
+	</div>
 </body>
 </html>
