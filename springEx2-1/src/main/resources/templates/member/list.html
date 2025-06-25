@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		body{
+			background-color : #f9f9f9;
+			padding: 20px;
+		}
+		table{
+			width: 500px;
+			border-collapse: collapse;
+			margin-top: 15px;
+		}
+		table, th, td{
+			border: 1px solid #ccc;
+		}
+		th, td{
+			padding: 10px;
+			text-align: center;
+		}
+		th{
+			background-color: #f0f0f0;
+		}
+   </style>
+</head>
+<body>
+	<h1>회원목록</h1>
+	
+	 <p class="no-members" th:if="${memberList == null or memberList.isEmpty()}">멤버가 없습니다.</p>
+	 
+	 <table th:if="${memberList != null and !memberList.isEmpty()}">
+	 	<thead>
+	 		<tr>
+	 			<th>아이디</th>
+	 			<th>비밀번호</th>
+	 			<th>이름</th>
+	 			<th>전화번호</th>
+	 		</tr>
+	 	</thead>
+	 	<tbody>
+	 		<tr th:each="member, stat : ${session.memberList}">
+	 			<td th:text="${session.member.id}">아이디</td>
+	 			<td th:text="${session.member.pw}">비밀번호</td>
+	 			<td th:text="${session.member.name}">이름</td>
+	 			<td th:text="${session.member.phone}">전화번호</td>
+	 		</tr>	
+	 	</tbody>		
+	 </table>
+</body>
+</html>
