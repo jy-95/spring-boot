@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- Fragment
+		- Thymeleaf에서 HTML의 특정 영역을 재사용할 수 있도록 정의하는 기능
+		
+		layout/header : templates.layout/header.html 에서 찾겠다.
+		header라는 이름의 fragment(Fragment 식별자) or header 태그
+	 -->
+
+	<div th:replace="~{layout/header :: header}"></div>
+	<!-- th:replace 뜻 = div 태그가 없어지고 header라는 태그가 온다는 뜻 -->
+	
+	<h1>홈페이지에 오신 것을 환영합니다</h1>
+</body>
+</html>
