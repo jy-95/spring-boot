@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div th:replace="~{layout/header :: header}"></div>
+	
+	<h1>홈</h1>
+	
+	<span th:if="${session.loginId != null}" th:text="|${session.loginId}님 환영합니다.|"></span>
+	<span th:unless="${session.loginId != null}" th:text="로그인해주세요"></span>
+</body>
+</html>

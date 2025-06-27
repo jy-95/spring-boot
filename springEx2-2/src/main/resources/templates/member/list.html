@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	table {
+			margin-botton: 10px;
+		}
+		table, th, td{
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		td{
+			width: 100px;
+			height: 80px;
+			text-align: center;
+		}
+</style>
+</head>
+<body>
+
+<div th:replace="~{layout/header :: header}"></div>
+
+	<h1>회원목록</h1>
+	
+	<table>
+		<tr>
+			<th>번호</th>
+			<th>이름</th>
+			<th>아이디</th>
+			<th>나이</th>
+			<th>전화번호</th>
+		</tr>
+		<tr th:each="member, status : ${memberList}">
+			<td th:text="${status.count}">번호</td>
+			<td th:text="${member.name}">이름</td>
+			<td th:text="${member.id}">아이디</td>
+			<td th:text="${member.age}">나이</td>
+			<td th:text="${member.phone}">전화번호</td>
+		</tr>
+	
+	</table>
+
+</body>
+</html>

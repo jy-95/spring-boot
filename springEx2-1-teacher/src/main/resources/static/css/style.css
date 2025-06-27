@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+body {
+	padding: 0;
+	margin: 0 auto;
+}
+
+.header{
+	display: flex;
+	background-color: black;
+	padding: 5px;
+	gap: 10px;
+}
+
+.container {
+	max-width: 500px;
+	width: 100%;
+	justify-self: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	border-radius: 5px;
+	border: 1px solid lightgray;
+	padding: 20px 10px;
+	margin: 20px;
+}
+
+.container h1{
+	text-align: center;
+}
+
+.header a {
+	text-decoration: none;
+	color: white;
+}
+
+.listContainer{
+	margin: 20px;
+}
+
+.pageTitle {
+	text-align: center;
+}
+
+.displayId {
+	color: blue;
+}
+
+fieldset{
+	border: none;	
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+input {
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+input[type='submit']{
+	border: none;
+	background-color: gray;
+	color: white;
+}
+
+
+table, tr, td ,th{
+	border: 1px solid lightgray;
+	border-collapse:collapse;
+	text-align: center;
+	padding: 10px;
+}
+
+table{
+	width: 100%;
+	}
+
+
+th{
+	background-color: gray;
+	color: white;
+	font-weight: bold;
+}
+
+tr:hover{
+	background-color: lightyellow;
+}
+
+.displayNoMember{
+	text-align: center; 
+	color:gray;
+}
