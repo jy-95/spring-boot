@@ -39,5 +39,18 @@ public class MemberDTO {
 		entity.setAddress(dto.getAddress());
 		
 	}
+	
+
+	public static MemberEntity convertDTO_to_Entity2(MemberDTO dto) {
+		MemberEntity entity = new MemberEntity();
+		entity.setId(dto.getId());
+		entity.setId(dto.getId());
+		entity.setPw(dto.getPw());
+		entity.setName(dto.getName());
+		entity.setPhone(dto.getPhone());
+		entity.setAddress(dto.getAddress());
+		return entity;
+		
+	}
 
 }

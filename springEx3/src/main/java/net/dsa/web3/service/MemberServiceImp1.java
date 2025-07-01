@@ -1,10 +1,15 @@
 package net.dsa.web3.service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
+import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import net.dsa.web3.dto.MemberDTO;
 import net.dsa.web3.entity.MemberEntity;
 import net.dsa.web3.repository.MemberRepository;
 
@@ -44,6 +49,134 @@ public class MemberServiceImp1 implements MemberService{
 		mr.save(m1);
 		log.debug("[service-save] memberEntity: {}", m1);
 	}
+
+	/**
+	 * 회원정보 조회
+	 * @param id 조회할 아이디
+	 * @return 조회 결과를 담은 객체
+	 */
+	@Override
+	public MemberDTO selectData(String id) {
+
+		//해당 ID로 조회된 결과 출력, 없으면 null 출력
+		MemberEntity member = mr.findById(id).orElse(null);
+		if(member == null)
+			return null;
+		
+		log.debug("[service-find] memberEntity : {}", member);
+		
+		// MemberDTO로 데이터 이동
+		MemberDTO memberDTO = MemberDTO.builder()
+							  .id(member.getId())
+							  .pw(member.getPw())
+							  .name(member.getName())
+							  .phone(member.getPhone())
+							  .address(member.getAddress())
+							  .build();
+				
+		return memberDTO;
+	}
+
+	
+	/**
+	 * 회원정보 수정
+	 * @param MemberDTO 회원정보를 담은 객체
+	 */
+	@Override
+	public void updateData(MemberDTO m) {
+		/*
+		 	Optional<T>
+		 	null 값으로 인한 NullPointerException을 방지하기 위한 자바 클래스
+		 	 - null을 직접 쓰는 것보다 안정적이고 가독성이 높음
+		 
+		 */
+		
+		MemberEntity entity = mr.findById(m.getId())
+				.orElseThrow(
+					() -> new EntityNotFoundException("없는 ID")		//이 클래스는 @Transactional 예외가 발생 시 rollback한다.
+				);
+				
+		// 수정할 정보를 entity에 세팅
+		entity.setPw(m.getPw());
+		entity.setName(m.getName());
+		entity.setPhone(m.getPhone());
+		entity.setAddress(m.getAddress());
+		
+		mr.save(entity);
+		
+	}
+
+	/**
+	 * 회원정보 삭제
+	 * @param id 삭제할 아이디
+	 * @return 삭제 여부 true / false
+	 */
+	@Override
+	public boolean deleteData(String id) {
+		
+		// id에 일치하는 회원정보가 있는지 없는지를 true / false 리턴
+		boolean result = mr.existsById(id);
+		
+		if(result) {
+			mr.deleteById(id);  //id에 일치하는 회원정보 삭제
+		}
+		
+		return result;
+		
+	}
+
+	@Override
+	public List<MemberDTO> selectAllData() {
+		
+		List<MemberEntity> entityList = mr.findAll();
+		List<MemberDTO> dtoList = new ArrayList<>();
+		
+		for (MemberEntity entity : entityList) {
+			MemberDTO dto = new MemberDTO();
+			// dto.setID(entity.getId());
+			MemberDTO.convertEntity_to_DTO(entity, dto);
+			dtoList.add(dto);
+			
+		}
+		return dtoList;
+			
+		
+	}
+
+	/**
+	 * 회원가입 처리
+	 * @param member 회원가입 정보
+	 */
+	@Override
+	public void save(MemberDTO member) {
+//		MemberEntity m3 =  MemberEntity.builder()
+//						  .id(member.getId())
+//						  .pw(member.getPw())
+//						  .name(member.getName())
+//						  .phone(member.getPhone())
+//						  .address(member.getAddress())
+//						  .build();
+//		
+		MemberEntity m3 = new MemberEntity();
+		MemberDTO.convertDTO_to_Entity(member, m3);
+		
+		mr.save(m3);
+		
+	}
+	
+	/**
+	 * convertDTO_to_Entity 함수를 수정해서 entity 값을 반환하게 한 뒤 간단하게 받은 진섭상.ver
+	 */
+	@Override
+	public void save2(MemberDTO member) {
+		
+		mr.save(MemberDTO.convertDTO_to_Entity2(member));
+		
+	}
+	
+	
+
+	
 	
 	
 }
