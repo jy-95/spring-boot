@@ -173,7 +173,27 @@ public class MemberServiceImp1 implements MemberService{
 		mr.save(MemberDTO.convertDTO_to_Entity2(member));
 		
 	}
-	
+
+	/**
+	 * 회원정보 조회해서 로그인 처리(로그인)
+	 * @param id
+	 * @param pw
+	 * @return true or false
+	 */
+	@Override
+	public boolean loginCheck(String id, String pw) {
+		
+		MemberEntity member = mr.findById(id)
+								.orElseThrow(
+									() -> new EntityNotFoundException()	
+								);
+		
+		if (member.getPw().equals(pw)) {
+			return true;
+		}
+		
+		return false;
+	}
 	
 
 	

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>회원목록</title>
+	<style>
+		table, tr, td ,th{
+		border: 1px solid black;
+		border-collapse:collapse;
+		text-align: center;
+		padding: 10px;
+		}
+	
+		table{
+		width: 100%;
+
+		}
+	
+		th{
+		background-color: lightyellow;
+		color: black;
+		font-weight: bold;
+		}
+	
+		tr:hover{
+		background-color: lightyellow;
+		}
+		
+	</style>
+	<script>
+		function deleteFunc(param){
+			console.log(param);
+			
+			const btn = document.querySelector('#btn');
+			const tId = btn.getAttribute('data-tid');
+			const tId2 = btn.dataset.tid;
+			
+			console.log(tId, tId2);
+			
+			let result = confirm('정말 삭제하시겠습니까?');
+			
+			if (result){
+				location.href = 'delete?id=' + param;
+			}
+			
+		}
+	</script>
+</head>
+<body>
+
+	<h1>[ 회원목록 ]</h1>
+	
+	<table>
+		<tr>
+	 		<th>ID</th>
+	 		<th>NAME</th>
+	 		<th style="width: 200px;">PHONE</th>
+	 		<th style="width: 400px;">ADDRESS</th>
+	 		<th>delete</th>
+	 	</tr>
+		<tr th:each="member : ${list}">
+			<td th:text="${member.id}"></td>
+			<td th:text="${member.name}"></td>
+			<td th:text="${member.phone}"></td>
+			<td th:text="${member.address}"></td>
+			<td>
+				<!-- 쿼리스트링을 자동으로 생성하는 타임리프 문법 -->
+				<!-- <a th:href="@{경로(파라미터명1=${값1}, 파라미터명2=${값2},)}">링크</a> -->
+				<a th:href="@{/member/delete(id=${member.id})}" th:text="삭제1"></a>
+				
+				<!-- 사용자 정의 데이터를 추가할 때 data-* 속성을 사용 -->
+				<!-- 속성 이름은 반드시 data- 로 시작 -->
+				<input type="button" value="삭제2" id="btn" 
+						th:attr="data-tid=${member.id}"
+						th:onclick="deleteFunc(this.getAttribute('data-tid'))">
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -20,4 +20,7 @@ public interface MemberService {
 	
 	void save2(MemberDTO member);
 
+	boolean loginCheck(String id, String pw);
+
+
 }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>회원정보수정</title>
+	<style>
+		th { text-align: left;}
+		td {text-align: center;}
+	</style>
+	<script>
+	function check () {
+		
+			let id = document.querySelector('#id');
+			let pw = document.querySelector('#pw');
+			let name = document.querySelector('#name');
+	
+			// ID 유효성 검사 (3 ~ 14)
+			if (id.value.length < 3 || id.value.length > 10) {
+				alert('아이디는 3 ~ 10자로 입력해주세요.');
+				id.focus();		// 커서 이동
+				id.select();	// 데이터 전체 선택
+				return false;
+			} 
+			
+			// 비밀번호 검사
+			if (pw.value.length < 3 || pw.value.length > 10) {
+				alert('비밀번호는 3 ~ 10자로 입력해주세요.');
+				return false;
+			}
+			
+			// 이름 필수 입력
+			if (name.value == "") {
+				alert('이름을 입력해주세요.');
+				return false;
+			}
+			return true;
+	}
+	</script>
+</head>
+<body>
+
+	<h2>회원정보 수정</h2>
+	<p th:if="${member == null}" th:text="|회원정보가 없습니다.|"></p>
+	
+	<form th:action="@{/member/update}" method="post" onsubmit="return check();">
+		<table th:if="${member != null}">
+			<tr>
+				<th>ID</th>
+				<td>
+					<input type="text" name="id" id="id" th:value="${member.id}" readonly>
+				</td>
+			</tr>
+			<tr>
+				<th>PW</th>
+				<td>
+					<input type="password" name="pw" id="pw" th:value="${member.pw}">
+				</td>
+			</tr>
+			<tr>
+				<th>NAME</th>
+				<td>
+					<input type="text" name="name" id="name" th:value="${member.name}">
+				</td>
+			</tr>
+			<tr>
+				<th>PHONE</th>
+				<td>
+					<input type="text" name="phone" th:value="${member.phone}">
+				</td>
+			</tr>
+			<tr>
+				<th>ADDRESS</th>
+				<td>
+					<input type="text" name="address" th:value="${member.address}">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="수정">
+				</td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>
