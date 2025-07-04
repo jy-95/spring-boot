@@ -3,10 +3,10 @@ package net.dsa.web3.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import net.dsa.web3.entity.MemberEntity;
+import net.dsa.web3.entity.StudentEntity;
 
 @Repository
-public interface MemberRepository 
-	extends JpaRepository<MemberEntity, String>{
+public interface StudentRepository 
+	extends JpaRepository<StudentEntity, Integer>{
 
 }

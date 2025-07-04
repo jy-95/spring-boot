@@ -2,40 +2,76 @@
 <html xmlns:th="thymeleaf.org">
 <head>
 	<meta charset="UTF-8">
-	<title>홈</title>
+	<title>HOME</title>
+	<style>
+		table, tr, td ,th{
+		border: 1px solid black;
+		border-collapse:collapse;
+		text-align: center;
+		padding: 10px;
+		}
+	
+		table{
+		width: 100%;
+
+		}
+	
+		th{
+		background-color: lightyellow;
+		color: black;
+		font-weight: bold;
+		}
+	
+		tr:hover{
+		background-color: lightyellow;
+		}
+		
+	</style>
+	<script>
+	function deleteFunc(param){
+	console.log(param);
+	
+	let result = confirm('정말 삭제하시겠습니까?');
+	
+	if (result){
+		location.href = 'student/delete?id=' + param;
+	}
+	}
+	</script>
 </head>
 <body>
-	<h1>Home</h1>
+
+	<h1>[ 학생목록 ]</h1>
+
+	<a th:href="@{student/register}">학생정보 등록</a>
 	
-	<h3>JPA를 활용한 DB연동</h3>
-	<ul>
-		<li><a th:href="@{basic/insertData}">데이터 저장</a></li>
-		<li><a th:href="@{basic/selectData}">데이터 조회</a></li>
-		<li><a th:href="@{basic/updateData}">데이터 수정</a></li>
-		<li><a th:href="@{basic/deleteData}">데이터 삭제</a></li>
-		<li><a th:href="@{basic/selectAllData}">전체 조회</a></li>
-	</ul>
-	
-	<h3>기본적인 회원정보 입출력</h3>
-	<ul>
-		<li th:if="${session.loginId == null}">
-			<a th:href="@{member/join}">회원가입</a>
-		</li>
-		<li th:if="${session.loginId == null}">
-			<a th:href="@{member/login}">로그인</a>
-		</li>
-		<li th:if="${session.loginId != null}">
-			<a th:href="@{member/logout}">로그아웃</a>
-		</li>
-		<li th:if="${session.loginId != null}">
-			<a th:href="@{member/update}">회원정보 수정</a>
-		</li>
-		<li th:if="${session.loginId != null}">
-			<a th:href="@{member/select}">회원정보 조회</a>
-		</li>
-		<li>
-			<a th:href="@{member/list}">회원목록</a>
-		</li>	
-	</ul>
+	<table>
+		<tr>
+	 		<th>학번</th>
+	 		<th>이름</th>
+	 		<th style="width: 200px;">전공</th>
+	 		<th style="width: 150px;">이해도</th>
+	 		<th>etc</th>
+	 	</tr>
+		<tr th:each="student : ${list}">
+			<td th:text="${student.id}"></td>
+			<td><a th:text="${student.name}" th:href="@{student/info(id=${student.id})}"></a></td>
+			<td th:text="${student.major}"></td>
+			<td><p th:text="|JAVA: ${student.java}|"></p> 
+				<p th:text="|DB: ${student.db}|"></p>
+				<p th:text="|WEB: ${student.web}|"></p>
+			</td>
+			<td>
+				<!-- 사용자 정의 데이터를 추가할 때 data-* 속성을 사용 -->
+				<!-- 속성 이름은 반드시 data- 로 시작 -->
+				<a th:href="@{student/edit(id=${student.id})}"><input type="button" value="수정" id="edt"></a>
+				<input type="button" value="삭제" id="del" 
+						th:attr="data-tid=${student.id}"
+						th:onclick="deleteFunc(this.getAttribute('data-tid'))">
+			</td>
+
+		</tr>
+	</table>
+
 </body>
 </html>

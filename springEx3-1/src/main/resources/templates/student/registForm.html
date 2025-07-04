@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>학생정보 등록</title>
+	<style>
+		table, tr, td ,th{
+		border: 1px solid black;
+		border-collapse:collapse;
+		text-align: center;
+		padding: 30px 10px;
+		}
+	
+		table{
+		width: 35%;
+		margin: 0 auto;
+		}
+	
+		th{
+		background-color: lightyellow;
+		width: 200px;
+		color: black;
+		font-weight: bold;
+		}
+		
+		h1{
+		text-align: center;
+		}
+		
+		input[type="text"] {
+ 		width: 90%;
+  		box-sizing: border-box; 
+  		
+		}
+		
+		select {
+    	width: 90%;
+    	box-sizing: border-box;
+		}
+		
+		label{
+		display: block;
+		color: gray; 
+		font-size: 0.9em; 
+		text-align:left; 
+		margin-bottom: 4px;
+		padding-left: 5%;
+		}
+		
+	</style>
+	<script>
+	function check () {
+			
+			let name = document.querySelector('#name');
+			let major = document.querySelector('#major');
+			let java = document.querySelector('#java');
+			let db = document.querySelector('#db');
+			let web = document.querySelector('#web');
+	
+			// 이름 유효성 검사 (3 ~ 10)
+			if (name.value.length < 3 || name.value.length > 10) {
+				alert('이름은 3 ~ 10자로 입력해주세요.');
+				name.focus();		// 커서 이동
+				name.select();	// 데이터 전체 선택
+				return false;
+			} 
+			
+			// 전공 입력 검사
+			if (major.value == "") {
+				alert('전공을 입력해주세요.');
+				return false;
+			}
+			
+			// 성적 필수 입력
+			if (java.value == "" || db.value == "" || web.value == "") {
+				alert('성적을 입력해주세요.');
+				return false;
+			}
+			return true;
+	}
+	</script>
+</head>
+<body>
+	<h1>[ 학생등록 ]</h1>
+	
+	<form th:action="@{/student/regist}" method="post" onsubmit="return check();">
+		<table>
+			<tr>
+				<th>이름</th>
+				<td><input type="text" name="name" id="name" placeholder="3~10자 사이"></td>
+			</tr>
+			<tr>
+				<th>전공</th>
+				<td><input type="text" name="major" id="major"></td>
+			</tr>
+			<tr>
+				<th>자바</th>
+				<td>
+					<label for="java">
+  						Java 등급 선택:
+					</label>
+					<select name="java" id="java">
+						<option value="" disabled selected>-- 선택 --</option>
+						<option value="상">상</option>
+          				<option value="중">중</option>
+          				<option value="하">하</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>데이터베이스</th>
+				<td>
+					<label for="db">
+  						데이터베이스 등급 선택:
+					</label>
+					<select name="db" id="db">
+						<option value="" disabled selected>-- 선택 --</option>
+						<option value="상">상</option>
+          				<option value="중">중</option>
+          				<option value="하">하</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>웹</th>
+				<td>
+					<label for="web">
+  						web 등급 선택:
+					</label>
+					<select name="web" id="web">
+						<option value="" disabled selected>-- 선택 --</option>
+						<option value="상">상</option>
+          				<option value="중">중</option>
+          				<option value="하">하</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align:center;">
+				<input type="submit" value="등록">
+				</td>
+			</tr>
+		</table>
+		
+	</form>
+</body>
+</html>

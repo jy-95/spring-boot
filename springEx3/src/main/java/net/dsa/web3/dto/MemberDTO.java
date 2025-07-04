@@ -1,10 +1,13 @@
 package net.dsa.web3.dto;
 
+import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import net.dsa.web3.entity.MemberEntity;
+
+
 
 /**
  * 회원정보를 저장하여 전달한 클래스(controller <-> service)
@@ -21,8 +24,8 @@ public class MemberDTO {
 	private String phone;
 	private String address;
 	
+	
 	public static void convertEntity_to_DTO(MemberEntity entity, MemberDTO dto) {
-		dto.setId(entity.getId());
 		dto.setId(entity.getId());
 		dto.setPw(entity.getPw());
 		dto.setName(entity.getName());
@@ -31,7 +34,6 @@ public class MemberDTO {
 	}
 	
 	public static void convertDTO_to_Entity(MemberDTO dto, MemberEntity entity) {
-		entity.setId(dto.getId());
 		entity.setId(dto.getId());
 		entity.setPw(dto.getPw());
 		entity.setName(dto.getName());
@@ -43,7 +45,6 @@ public class MemberDTO {
 
 	public static MemberEntity convertDTO_to_Entity2(MemberDTO dto) {
 		MemberEntity entity = new MemberEntity();
-		entity.setId(dto.getId());
 		entity.setId(dto.getId());
 		entity.setPw(dto.getPw());
 		entity.setName(dto.getName());
