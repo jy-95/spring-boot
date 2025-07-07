@@ -26,6 +26,20 @@
 		background-color: lightyellow;
 		}
 		
+		.go_to_reg{
+		text-align: right;
+		display: block;
+		padding: 10px;
+		}
+		
+		.go_to_reg:hover{
+		color: red;
+		}
+		
+		h1{
+		text-align: center;
+		}
+		
 	</style>
 	<script>
 	function deleteFunc(param){
@@ -43,7 +57,7 @@
 
 	<h1>[ 학생목록 ]</h1>
 
-	<a th:href="@{student/register}">학생정보 등록</a>
+	<a th:href="@{student/register}" class="go_to_reg">학생정보 등록</a>
 	
 	<table>
 		<tr>
