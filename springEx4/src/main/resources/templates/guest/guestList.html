@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<body>
+	<h2>방명록</h2>
+	
+	<table>
+		<tr>
+			<th>글번호</th>
+			<th>이름</th>
+			<th>글 내용</th>
+
+		</tr>
+		<tr th:each="guest : ${guestList}">
+			<td th:text="${guest.num}"></td>
+			<td>
+				<p th:text="${guest.name}"></p>
+			</td>
+			<td th:text="${guest.message}"></td>
+			
+		</tr>
+	</table>
+	
+	
+</body>
+</html>
