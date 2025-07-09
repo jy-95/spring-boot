@@ -7,6 +7,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -45,7 +47,11 @@ public class GuestController {
 		
 		return "redirect:/";
 	}
-	
+	/**
+	 * 글 목록 보기
+	 * @param model
+	 * @return guestList.html
+	 */
 	@GetMapping("guestList")
 	public String guestbook(Model model) {
 		
@@ -53,7 +59,7 @@ public class GuestController {
 		
 		// 로그 출력
 		for (GuestBookDTO guest : guestList) {
-			log.debug("> 학생 : {}", guest);			
+			log.debug("글 정보: {}", guest);			
 		}
 		
 		// home.html에서 출력하기위해 Model 객체에 저장
@@ -62,5 +68,25 @@ public class GuestController {
 		// 리턴 문자열에 .html을 붙여 src/main/resources 의 templates 패키지 로부터 찾음
 		return "guest/guestList";
 
+	}
+	
+	/**
+	 * 글 삭제
+	 * @param password 입력한 비밀번호
+	 * @param num 삭제할 글 번호
+	 * @param RedirectAttributes
+	 * 			리다이렉트 할 때 오류 메시지를 저장 및 전달할 객체
+	 * @return 글 목록 페이지로 이동
+	 */
+	@PostMapping("delete")
+	public String delete(GuestBookDTO guestbook, RedirectAttributes ra) {
+		try {
+			service.delete(guestbook);
+			
+		} catch (Exception e) {
+			ra.addFlashAttribute("msg", "삭제 실패했습니다.");
+		}
+		
+		return "redirect:/guest/guestList";
 	}
 }

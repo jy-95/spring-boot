@@ -6,7 +6,7 @@ window.onload = function(){
 	let h2 = document.querySelector('h2');
 	
 	h2.addEventListener('click', function(){
-		location.href = '/web4';
+		location.href = '/web4/guest/guestList';
 	})
 }
 
