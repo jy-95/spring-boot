@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>MAIN</title>
+</head>
+<body>
+<div class="container">
+		<h1>향수 설문조사</h1>
+		
+		<!-- 이름 -->
+		<div class="input-name">
+			<label for="name">이름</label>
+			<input type="text" id="name" placeholder="이름을 입력하세요" required>
+		</div>
+		
+		<!-- 성별 -->
+		<div class="input-gender">
+			<label for="gender">성별</label>
+			<select id="gender" required>
+				<option value="">-- 선택하세요 --</option>
+				<option value="남성">남성</option>
+				<option value="여성">여성</option>
+			</select>
+		</div>
+		
+		<!-- 나이 -->
+		<div class="input-age">
+			<label for="age">수량:</label>
+			<input type="text" id="age" placeholder="나이를 입력하세요" required>
+		</div>
+		
+		<!-- 가장 좋아하는 향기 -->
+		<div class="input-favorite">
+			<label for="favorite_scent">가장 좋아하는 향기</label>
+			<select id="favorite_scent">
+				<option value="">-- 선택하세요 --</option>
+				<option value="꽃향">꽃향</option>
+				<option value="우디향">우디향</option>
+				<option value="과일향">과일향</option>
+				<option value="시트러스향">시트러스향</option>
+				<option value="스파이시향">스파이시향</option>
+			</select>
+		</div>
+		
+		<!-- 사용 빈도 -->
+		<div class="input-useage">
+			<label>향수를 얼마나 자주 사용하시나요?</label>
+			<div>
+				<input type="radio" name="useage_frequency" value="매일">
+				<label>매일</label>
+			</div>
+			<div>
+				<input type="radio" name="useage_frequency" value="주 2~4회">
+				<label>주 2~4회</label>
+			</div>
+			<div>
+				<input type="radio" name="useage_frequency" value="가끔">
+				<label>가끔</label>
+			</div>
+			<div>
+				<input type="radio" name="useage_frequency" value="사용하지 않음" checked>
+				<label>사용하지 않음</label>
+			</div>
+		</div>
+		
+		<!-- 선호 브랜드 -->
+		<div class="input-brand">
+			<label for="favorite_brand">선호하는 향수 브랜드</label>
+			<input type="text" id="favorite_brand" placeholder="브랜드를 입력하세요">
+		</div>
+		
+		<!-- 예산 -->
+		<div class="input-budget">
+			<label for="purchase_budget">향수 구매 시 예상 예산</label>
+			<select id="purchase_budget">
+				<option value="5만원-10만원">5만원-10만원</option>
+				<option value="10만원-15만원">10만원-15만원</option>
+				<option value="15만원-20만원">15만원-20만원</option>
+				<option value="20만원-25만원">20만원-25만원</option>
+				<option value="25만원-30만원">25만원-30만원</option>
+				<option value="30만원 이상">30만원 이상</option>
+			</select>
+		</div>
+		
+		<!-- 의견 -->
+		<div class="input-comments">
+			<label for="comments">추가 의견</label>
+			<textarea name="comments" id="comments" cols="30" rows="10"></textarea><br>
+		</div>
+		
+		<!-- 설문조사 폼 -->
+		<form id="submitForm" th:action="@{/submit}" method="post">
+			<input type="hidden" name="name">
+			<input type="hidden" name="gender">
+			<input type="hidden" name="age">
+			<input type="hidden" name="favorite_scent">
+			<input type="hidden" name="useage_frequency">
+			<input type="hidden" name="favorite_brand">
+			<input type="hidden" name="purchase_budget">
+			<input type="hidden" name="comments">
+			<button type="button" onclick="orderFunc()">설문 제출</button>
+			<button type="button" onclick="orderFunc()">설문 결과</button>
+		</form>
+		
+		<div id="error" class="error"></div>
+	</div>
+</body>
+</html>
