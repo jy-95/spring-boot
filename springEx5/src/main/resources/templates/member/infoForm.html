@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>개인정보 수정</title>
+	<link rel="stylesheet" th:href="@{/css/main.css}">
+	<script>
+		window.onload = function(){
+			document.querySelector('#updateForm')
+					.addEventListener('submit', validation);
+		}
+		
+		// 유효성 검사
+		function validation(e) {
+			let pw = document.querySelector('#memberPassword').value;
+			let pw2 = document.querySelector('#memberPassword2').value;
+			let name = document.querySelector('#memberName').value;
+			
+			if (pw != pw2){
+				alert('비밀번호를 정확하게 입력하세요.');
+				e.preventDefault();
+				return;
+			}
+			if (!name) {
+				alert('이름을 입력하세요.');
+				e.preventDefault();
+				return;
+			}
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<h1>[ 개인정보 수정 ]</h1>
+	</header>
+
+	<section>
+		<form id="updateForm" th:action="@{/member/info}" method="post">
+			<table>
+				<tr>
+					<th>ID</th>
+					<td th:text="${member.memberId}"></td>
+				</tr>
+				<tr>
+				 <th>비밀번호</th>
+				 <td>
+				 	<input type="password" name="memberPassword" id="memberPassword" placeholder="비밀번호 입력">
+				 	<br>
+				 	<input type="password" id="memberPassword2" placeholder="비밀번호 다시 입력">
+				 </td>
+				</tr>
+				<tr>
+				 <th>이름</th>
+				 <td>
+					<input type="text" name="memberName" id="memberName" th:value="${member.memberName}">
+				 </td>
+				</tr>
+				<tr>
+					<th>이메일</th>
+					<td>
+						<input type="text" name="email" placeholder="이메일 입력" th:value="${member.email}">
+					</td>
+				</tr>
+				<tr>
+					<th>전화번호</th>
+					<td>
+						<input type="tel" name="phone" placeholder="전화번호 입력" th:value="${member.phone}">
+					</td>
+				</tr>
+				<tr>
+					<th>주소</th>
+					<td>
+						<input type="text" name="address" style="width: 300px;" th:value="${member.address}">
+					</td>
+				</tr>		
+			</table>
+			<br>
+			<button type="submit">수정</button>
+			<button type="reset">다시쓰기</button>
+		</form>
+	</section>
+</body>
+</html>

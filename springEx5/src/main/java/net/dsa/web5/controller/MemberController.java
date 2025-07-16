@@ -1,5 +1,7 @@
 package net.dsa.web5.controller;
 
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import net.dsa.web5.dto.MemberDTO;
+import net.dsa.web5.entity.MemberEntity;
 import net.dsa.web5.service.MemberService;
 
 @Controller
@@ -90,5 +93,48 @@ public class MemberController {
 	@GetMapping("loginForm")
 	public String loginForm() {
 		return "member/loginForm";
+	}
+	
+	
+	/**
+	 * 개인정보수정 폼으로 이동
+	 * @param user	로그인한 사용자의 인증 정보
+	 * @param model 
+	 * @return infoForm.html
+	 */
+	@GetMapping("info")
+	public String infoForm(@AuthenticationPrincipal UserDetails user, Model model) {
+		
+		try {
+			MemberDTO dto = ms.getMemberInfo(user.getUsername());
+			model.addAttribute("member",dto);
+			log.debug("회원 정보: {}", dto);
+		} catch (Exception e) {
+			log.debug("회원 정보 조회 실패..");
+		}
+		
+		return "member/infoForm";
+	}
+	
+	/**
+	 * 개인정보 수정 폼에서 전달된 값 처리
+	 * @param user 로그인 사용자의 인증 정보
+	 * @param memberDTO 수정폼에서 입력한 값	
+	 * @return 메인화면으로
+	 */
+	@PostMapping("info")
+	public String info(@AuthenticationPrincipal UserDetails user, MemberDTO dto) {
+		
+		log.debug("수정폼에서 전달된 값: {}", dto);
+		dto.setMemberId(user.getUsername());
+		
+		try {
+			ms.edit(dto);
+			log.debug("수정 성공");
+		} catch (Exception e) {
+			log.debug("수정 실패..");
+		}
+		
+		return "redirect:/";
 	}
 }

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: #f9f9f9;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;		
+}
+
+/* 컨테이너 */
+.container {
+	width: 400px;
+	background: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.container h1 {
+	text-align: center;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+/* 입력 div */
+.input-group {
+	margin-bottom: 15px;
+}
+.input-group > div {
+	display: flex;
+	margin-top: 5px;
+	margin-left: 15px;
+}
+label {
+	display: block;
+	color: #555;
+}
+.input-group > label {
+	display: block;
+	font-weight: 900;
+	color: #555;
+}
+input, select {
+	margin-top: 5px;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+input[type="checkbox"], input[type="radio"] {
+	width: auto;
+}
+
+/* 버튼 */
+button {
+	width: 100%;
+	background: #1e98d0;
+	color: white;
+	border: none;
+	margin-top: 10px;
+	padding: 12px;
+	border-radius: 4px;
+	font-size: 18px;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+button:hover {
+	background: #37b2eb;
+}

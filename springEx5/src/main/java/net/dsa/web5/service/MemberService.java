@@ -3,6 +3,7 @@ package net.dsa.web5.service;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -58,5 +59,50 @@ public class MemberService {
 		
 	}
 	
+	/**
+	 * 회원정보 조회
+	 * @param username 회원 아이디
+	 * @return 회원정보
+	 */
+	 public MemberDTO getMemberInfo(String username) {
+	     
+		 MemberEntity entity = mr.findById(username).orElseThrow(() -> new EntityNotFoundException(username + ": 아이디가 없습니다."));
+		 
+		 MemberDTO dto = MemberDTO.builder()
+		 		  				  .memberId(entity.getMemberId())
+		 		  				  .memberName(entity.getMemberName())
+		 		  				  .email(entity.getEmail())
+		 		  				  .phone(entity.getPhone())
+		 		  				  .address(entity.getAddress())
+		 		  				  .build();
+		 return dto;
+	    }
+
+	 
+	/**
+	 * 개인정보 수정 처리 
+	 * @param dto 수정할 정보
+	 */
+	public void edit(MemberDTO dto) {
+		
+		MemberEntity entity = mr.findById(dto.getMemberId()).orElseThrow(() -> new EntityNotFoundException(
+				dto.getMemberId() + ": 아이디가 없습니다."));
+		
+		// dto 비밀번호가 있으면 비밀번호도 수정
+		
+		if(!dto.getMemberPassword().isEmpty()) {
+			entity.setMemberPassword(
+					passwordEncoder.encode(dto.getMemberPassword()));
+		}
+		
+		entity.setMemberName(dto.getMemberName());
+		entity.setEmail(dto.getEmail());
+		entity.setPhone(dto.getPhone());
+		entity.setAddress(dto.getAddress());
+		
+		// @Transactional 안에서 필드를 변경하면 JPA가 변경을 감지해서 UPDATE를 실행
+//		mr.save(entity);
+		
+	}
 	
 }
