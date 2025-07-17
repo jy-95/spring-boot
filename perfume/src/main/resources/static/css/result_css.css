@@ -1,6 +1,43 @@
 @charset "UTF-8";
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: #f9f9f9;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+a{
+	text-decoration:none;
+	color: #333;
+}
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../image/flower.jpg') no-repeat left center,
+                url('../image/flower.jpg') no-repeat right center;
+    background-size: 40% auto;
+    filter: grayscale(70%) opacity(0.15); 
+	 z-index: 0;
+}
+
+.container {
+	width: 90vw;
+	 z-index: 1;
+	padding: 20px;
+	margin-top: 50px;
+}
+.container h1 {
+	text-align: center;
+	color: #333;
+	margin-bottom: 40px;
+}
 table, tr, td ,th{
-		border: 1px solid black;
+		border: 1px solid gray;
 		border-collapse:collapse;
 		text-align: center;
 		padding: 10px;
@@ -12,11 +49,16 @@ table, tr, td ,th{
 		}
 	
 		th{
-		background-color: lightyellow;
+		background-color: #D9E3DB;
 		color: black;
 		font-weight: bold;
 		}
-	
-		tr:hover{
-		background-color: lightyellow;
-		}
+		
+.female{color: #FF1493}	
+.female-name{color: #FF0066}
+.male{color: #0033FF}	
+.male-name{color: #3399FF}
+
+.gender{
+	margin-bottom: 30px;
+}		

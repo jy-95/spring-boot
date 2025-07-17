@@ -7,6 +7,7 @@
 	<link rel="stylesheet" th:href="@{/css/main_css.css}">
 </head>
 <body>
+<div class="background-image"></div>
 <div class="container">
 
 		<h1>향수 설문조사</h1>
@@ -15,31 +16,34 @@
 		
 		<!-- 이름 -->
 		<div class="input-group">
-			<label for="name">이름</label>
+			<label for="name" class="label-red">이름</label>
 			<input type="text" id="name" name="name" placeholder="이름을 입력하세요">
 		</div>
 		
 		<!-- 성별 -->
 		<div class="input-group">
-			<label for="gender">성별</label>
-			<select id="gender" name="gender">
-				<option value="">-- 선택하세요 --</option>
+			<label for="gender" class="label-orange">성별</label>
+			
+				<select id="gender" name="gender">
+				<option value=""> 선택하세요 </option>
 				<option value="남성">남성</option>
 				<option value="여성">여성</option>
 			</select>
+		
+			
 		</div>
 		
 		<!-- 나이 -->
 		<div class="input-group">
-			<label for="age">나이:</label>
+			<label for="age" class="label-yellow">나이:</label>
 			<input type="number" id="age" name="age" placeholder="나이를 입력하세요">
 		</div>
 		
 		<!-- 가장 좋아하는 향기 -->
 		<div class="input-group">
-			<label for="favorite_scent">가장 좋아하는 향기</label>
+			<label for="favorite_scent" class="label-yellowgreen">가장 좋아하는 향기</label>
 			<select id="favorite_scent" name="favorite_scent">
-				<option value="">-- 선택하세요 --</option>
+				<option value=""> 선택하세요 </option>
 				<option value="꽃향">꽃향</option>
 				<option value="우디향">우디향</option>
 				<option value="과일향">과일향</option>
@@ -50,7 +54,8 @@
 		
 		<!-- 사용 빈도 -->
 		<div class="input-group">
-			<label>향수를 얼마나 자주 사용하시나요?</label>
+			<label class="label-skyblue">향수를 얼마나 자주 사용하시나요?</label>
+			<div class="radio-group">
 			<div>
 				<input type="radio" name="usage_frequency" value="매일">
 				<label>매일</label>
@@ -68,16 +73,17 @@
 				<label>사용하지 않음</label>
 			</div>
 		</div>
+		</div>
 		
 		<!-- 선호 브랜드 -->
 		<div class="input-group">
-			<label for="favorite_brand">선호하는 향수 브랜드</label>
+			<label for="favorite_brand" class="label-purple">선호하는 향수 브랜드</label>
 			<input type="text" id="favorite_brand" name="favorite_brand" placeholder="브랜드를 입력하세요">
 		</div>
 		
 		<!-- 예산 -->
 		<div class="input-group">
-			<label for="purchase_budget">향수 구매 시 예상 예산</label>
+			<label for="purchase_budget" class="label-pink">향수 구매 시 예상 예산</label>
 			<select id="purchase_budget" name="purchase_budget">
 				<option value="5만원-10만원">5만원-10만원</option>
 				<option value="10만원-15만원">10만원-15만원</option>
@@ -90,12 +96,14 @@
 		
 		<!-- 의견 -->
 		<div class="input-group">
-			<label for="comments">추가 의견</label>
-			<textarea name="comments" id="comments" cols="30" rows="10"></textarea><br>
+			<label for="comments" class="label-navy">추가 의견</label><br>
+			<textarea name="comments" id="comments" ></textarea><br>
 		</div>
-		
+		<div class="button-wrapper">
 			<button type="submit">설문 제출</button>
 			<button type="button" onclick="location.href='/ex/result'">설문 결과</button>
+		</div>
+			
 		</form>
 		
 	</div>

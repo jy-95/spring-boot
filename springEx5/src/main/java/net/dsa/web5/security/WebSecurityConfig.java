@@ -2,7 +2,7 @@ package net.dsa.web5.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.Customizer;
+import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
@@ -14,6 +14,11 @@ import org.springframework.security.web.SecurityFilterChain;
  */
 @Configuration 		// 스프링 설정 클래스임을 명시
 @EnableWebSecurity 	// Spring Security 활성화
+/*
+ 	Spring Security 6.x 이후 버전에서 메서드 보안 기능을 활성화하는 Annotation
+ 	  - @PreAuthorize, @PostAuthorize 사용 가능하게 함.
+ */
+@EnableMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfig {
 	
 	// 로그인 없이 접근 가능한 URL 목록
@@ -39,6 +44,8 @@ public class WebSecurityConfig {
             //요청에 대한 권한 설정
             .authorizeHttpRequests(author -> author
                 .requestMatchers(PUBLIC_URLS).permitAll()   //모두 접근 허용
+                // /admin/경로로 들어오는 모든 요청은 ADMIN 권한을 가진 사용자만 접근 가능
+                .requestMatchers("/admin/**").hasRole("ADMIN")
                 .anyRequest().authenticated()               //그 외의 모든 요청은 인증 필요
             )
             //폼 로그인 설정
@@ -54,7 +61,12 @@ public class WebSecurityConfig {
             .logout(logout -> logout
                     .logoutUrl("/member/logout")            //로그아웃 처리 경로
                     .logoutSuccessUrl("/")                  //로그아웃 성공 시 이동할 경로
-            );
+            )
+            // 권한 예외 설정, 인가(authorization) 실패에만 적용
+            .exceptionHandling( ex -> ex
+            		// 접근 권한이 없을 때(403) 자동으로 보여줄 페이지 경로를 지정
+            		.accessDeniedPage("/error/403")) 
+            ;
 
         // 개발용 설정: CORS, CSRF 비활성화 (실제 서비스 시에는 활성화 필요)
         http

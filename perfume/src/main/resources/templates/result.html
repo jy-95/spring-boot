@@ -6,9 +6,17 @@
 	<link rel="stylesheet" th:href="@{/css/result_css.css}">
 </head>
 <body>
+<div class="background-image"></div>
 <div class="container">
 		<div class="top">
-			<h2>향수 설문 결과</h2>
+			<h1><a th:href="@{/}">향수 설문 결과</a></h1>
+		</div>
+		
+		<div class="gender">
+			<h2><strong>응답자(
+			<span class="female">여 <span th:text="${femaleCount}"></span></span>
+			<span class="male"> 남 <span th:text="${maleCount}"></span></span>
+			)</strong></h2>
 		</div>
 	
 	<table>
@@ -23,7 +31,7 @@
 	 		<th>설문시간</th>
 	 	</tr>
 		<tr th:each="Perfume : ${Perfume}">
-			<td th:text="${Perfume.name}"></td>
+			<td th:text="${Perfume.name}" th:classappend="${Perfume.gender}== '여성' ? 'female-name' : 'male-name'"></td>
 			<td th:text="${Perfume.age}"></td>
 			<td th:text="${Perfume.favorite_scent}"></td>
 			<td th:text="${Perfume.usage_frequency}"></td>

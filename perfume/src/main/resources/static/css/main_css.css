@@ -7,16 +7,29 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;		
 }
 
-/* 컨테이너 */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../image/flower.jpg') no-repeat left center,
+                url('../image/flower.jpg') no-repeat right center;
+    background-size: 40% auto;
+    filter: grayscale(70%) opacity(0.15); /* 흑백 + 투명도 */
+	 z-index: 0;
+}
+
 .container {
-	width: 400px;
+	width: 500px;
+	 z-index: 1;
 	background: white;
 	padding: 20px;
 	border-radius: 8px;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	margin-top: 30px;
 }
 .container h1 {
 	text-align: center;
@@ -24,39 +37,64 @@ body {
 	margin-bottom: 20px;
 }
 
-/* 입력 div */
 .input-group {
 	margin-bottom: 15px;
 }
 .input-group > div {
 	display: flex;
 	margin-top: 5px;
-	margin-left: 15px;
+	align-items: center;
+	gap: 10px;
 }
-label {
-	display: block;
-	color: #555;
-}
-.input-group > label {
-	display: block;
-	font-weight: 900;
-	color: #555;
-}
-input, select {
+
+.label-red 	  { color: #ff7043; font-weight: bold; }
+.label-orange { color: #ff8a65; font-weight: bold; }
+.label-yellow { color: #fbc02d; font-weight: bold; }
+.label-yellowgreen { color: #9ccc65; font-weight: bold; }
+.label-skyblue   { color: #29b6f6; font-weight: bold; }
+.label-pink   { color: #f06292; font-weight: bold; }
+.label-purple { color: #ab47bc; font-weight: bold; }
+.label-navy   { color: #3f51b5; font-weight: bold; }
+
+input, select, textarea {
 	margin-top: 5px;
 	width: 100%;
 	padding: 10px;
 	border: 1px solid #ddd;
 	border-radius: 4px;
 	box-sizing: border-box;
+	min-width: 100%;
+	max-width: 100%;
 }
-input[type="checkbox"], input[type="radio"] {
-	width: auto;
+input[type="radio"] {
+	margin: 0;
+}
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  width: 100%; 
 }
 
-/* 버튼 */
-button {
-	width: 100%;
+.radio-group > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px; 
+  min-width: 50px; 
+}
+
+.radio-group > div > label {
+  display: inline-block;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  white-space: nowrap; 
+  margin: 0;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+	width: 150px;
 	background: #1e98d0;
 	color: white;
 	border: none;
@@ -67,6 +105,33 @@ button {
 	cursor: pointer;
 	transition: background 0.3s;
 }
+
+button[type="button"] {
+	width: 150px;
+	background: #808080;
+	color: white;
+	border: none;
+	margin-top: 10px;
+	padding: 12px;
+	border-radius: 4px;
+	font-size: 18px;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+
+.button-wrapper{
+	display: flex;
+	justify-content: center;
+}
+
+.button-wrapper>button[type="submit"]{
+	margin-right : 20px;
+}
+
 button:hover {
 	background: #37b2eb;
+}
+
+button[type="button"]:hover{
+	background: #C0C0C0;
 }

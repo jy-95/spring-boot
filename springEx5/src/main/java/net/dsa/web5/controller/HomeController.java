@@ -37,4 +37,11 @@ public class HomeController {
 		
 		return "thymeleaf";
 	}
+	
+	//WebSecurityConfig 에서 예외핸들러를 적었다면 해당 경로를 처리하는 메서드도 필요
+	@GetMapping("/error/403")
+	public String error403() {
+		log.debug("error 403 - 권한이 없습니다.");
+		return "error/403";
+	}
 }

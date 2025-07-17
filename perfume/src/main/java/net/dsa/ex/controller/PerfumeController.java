@@ -43,11 +43,19 @@ public class PerfumeController {
 	public String result(Model model) {
 		
 		List<PerfumeDTO> PerfumeList = ps.selectAll();
+		int femaleCount = 0;
+		int maleCount = 0;
 		
-		for (PerfumeDTO Perfume : PerfumeList) {
-			log.debug("설문 정보: {}", Perfume);			
+		for (PerfumeDTO dto : PerfumeList) {
+			if(dto.getGender().equals("남성")) {
+				maleCount++;
+			}else {
+				femaleCount++;
+			}
+			
 		}
-		
+		model.addAttribute("maleCount", maleCount);
+		model.addAttribute("femaleCount", femaleCount);
 		model.addAttribute("Perfume", PerfumeList);
 		
 		return "result";

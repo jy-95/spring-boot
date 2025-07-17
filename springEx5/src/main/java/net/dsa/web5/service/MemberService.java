@@ -1,5 +1,8 @@
 package net.dsa.web5.service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -103,6 +106,49 @@ public class MemberService {
 		// @Transactional 안에서 필드를 변경하면 JPA가 변경을 감지해서 UPDATE를 실행
 //		mr.save(entity);
 		
+	}
+
+	public List<MemberDTO> selectAll(String userId) {
+		
+		List<MemberEntity> memberList = mr.findAll();
+		List<MemberDTO> dtoList = new ArrayList<>();
+		
+		for (MemberEntity member : memberList) {
+			if(!member.getMemberId().equals(userId)) {
+			MemberDTO dto = MemberDTO.builder()
+									 .memberId(member.getMemberId())
+									 .memberName(member.getMemberName())
+									 .email(member.getEmail())
+									 .phone(member.getPhone())
+									 .address(member.getAddress())
+									 .rolename(member.getRolename())
+									 .enabled(member.getEnabled())
+									 .build();
+			dtoList.add(dto);
+			}
+		}
+		
+		return dtoList;
+	}
+
+	public void changeRole(String id) {
+
+		MemberEntity entity = mr.findById(id).orElseThrow(() -> new EntityNotFoundException(id + ": 아이디가 없습니다."));
+		if(entity.getRolename().equals("ROLE_ADMIN")) {
+			entity.setRolename("ROLE_USER");
+		}else {
+			entity.setRolename("ROLE_ADMIN");
+		}
+		
+	}
+
+	public void changeEnabled(String id) {
+		MemberEntity entity = mr.findById(id).orElseThrow(() -> new EntityNotFoundException(id + ": 아이디가 없습니다."));
+		if(entity.getEnabled().equals(true)) {
+			entity.setEnabled(false);
+		}else {
+			entity.setEnabled(true);
+		}
 	}
 	
 }
