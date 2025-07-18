@@ -4,31 +4,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>회원 목록</title>
-	<style>
-	
-header h1 {
-	text-align: center;
-}
-		
-table, tr, td ,th{
-		border: 1px solid gray;
-		border-collapse:collapse;
-		text-align: center;
-		padding: 10px;
-		}
-	
-		table{
-		width: 100%;
-
-		}
-	
-		th{
-		background-color: #D9E3DB;
-		color: black;
-		font-weight: bold;
+	<link rel="stylesheet" th:href="@{/css/main.css}">
+	<script>
+		function updateToggle(id) {
+			let result = confirm('정말 권한을 변경하시겠습니까?')
+			if(result){
+				location.href = `update?id=${id}`;
+			}
 		}
 		
-	</style>
+		function enabledToggle(id, enabled) {
+			let result = enabled === "true" ? "비활성화" : "활성화"
+			if(confirm(`정말 ${result} 하시겠습니까?`)){
+				location.href = `enabled?id=${id}&enabled=${enabled}`;
+			}
+		}
+	</script>
 </head>
 <body>
 	
@@ -36,33 +27,37 @@ table, tr, td ,th{
 		<h1>[ 회원 목록 ]</h1>
 	</header>
 	
-	<p th:text="|${#authentication.name} 님 로그인 중|"></p>
-	<table>
-	<tr>
-		<th>ID</th>
-		<th>NAME</th>
-		<th>Email</th>
-		<th>Phone</th>
-		<th>Address</th>
-		<th>RoleName</th>
-		<th>Enabled</th>
-		<th></th>
-	</tr>
-	<tr th:each="member : ${memberList}">
-		<td th:text="${member.memberId}"></td>
-		<td th:text="${member.memberName}"></td>
-		<td th:text="${member.email}"></td>
-		<td th:text="${member.phone}"></td>
-		<td th:text="${member.address}"></td>
-		<td th:text="${member.rolename}"></td>
-		<td th:text="${member.enabled}"></td>
-		<td>
-			<a th:href="@{/admin/editRole(id=${member.memberId})}"><input type="button" value="권한변경" id="edtRole"></a>
-			<a th:href="@{/admin/editEnabled(id=${member.memberId})}"><input type="button" th:value="${member.enabled ? '비활성화' : '활성화'}" ></a>
-			</td>
-	</tr>
+	<section>
+	
+		<table>
+			<caption sec:authorize="isAuthenticated()" th:text="|${#authentication.name} 님 로그인 중|" style="text-align: left;">
+			</caption>
+			<tr>
+				<th>ID</th>
+				<th>NAME</th>
+				<th>Email</th>
+				<th>Phone</th>
+				<th>Address</th>
+				<th>RoleName</th>
+				<th>Enabled</th>
+				<th>etc...</th>
+			</tr>
+			<tr th:each="member : ${memberList}" th:if="${member.memberId != #authentication.name}">
+				<td th:text="${member.memberId}"></td>
+				<td th:text="${member.memberName}"></td>
+				<td th:text="${member.email}"></td>
+				<td th:text="${member.phone}"></td>
+				<td th:text="${member.address}"></td>
+				<td th:text="${member.rolename}"></td>
+				<td th:text="${member.enabled}"></td>
+				<td>
+					<input type="button" value="권한변경" th:attr="data-id=${member.memberId}" onclick="updateToggle(this.getAttribute('data-id'))">
+					<input type="button" th:value="${member.enabled} ? '비활성화' : '활성화'" th:attr="data-id=${member.memberId}, data-enabled=${member.enabled}" onclick="enabledToggle(this.getAttribute('data-id'), this.getAttribute('data-enabled'))">
+				</td>
+			</tr>
 	
 	
-	</table>
+		</table>
+	</section>
 </body>
 </html>

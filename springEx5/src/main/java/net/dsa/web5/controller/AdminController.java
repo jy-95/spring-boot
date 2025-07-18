@@ -33,28 +33,57 @@ public class AdminController {
 		return "admin/adminPage";
 	}
 	
+	/**
+	 * 회원목록 조회
+	 * @param model
+	 * @return list.html
+	 */
 	@GetMapping("list")
-	public String list(@AuthenticationPrincipal UserDetails user, Model model) {
+	public String list(Model model) {
 		
-		String userId = user.getUsername();
-		List<MemberDTO> dto = ms.selectAll(userId);
-		model.addAttribute("memberList",dto);
+		try {
+			List<MemberDTO> dto = ms.selectAll();
+			model.addAttribute("memberList",dto);
+			log.debug("회원목록: {}", dto);
+		} catch (Exception e) {
+			log.debug("[예외 발생] 회원목록 조회 실패..");
+		}
 		
 		return "admin/list";
 	}
 	
-	@GetMapping("editRole")
-	public String editRole(@RequestParam (name="id") String id) {
-		
-		ms.changeRole(id);
+	/**
+	 * 권한 변경
+	 * @param id 권한을 변경하고자 하는 아이디
+	 * @return 회원목록
+	 */
+	@GetMapping("update")
+	public String update(@RequestParam (name="id") String id) {
+		try {
+			ms.changeRole(id);			
+			log.debug("권한 변경 성공!");
+		} catch (Exception e) {
+			log.debug("[예외 발생] 권한 변경 실패..");
+		}
 		
 		return "redirect:/admin/list";
 	}
 	
-	@GetMapping("editEnabled")
-	public String editEnabled(@RequestParam (name="id") String id) {
+	/**
+	 * 계정상태 변경 처리
+	 * @param id
+	 * @param enabled
+	 * @return 회원목록
+	 */
+	@GetMapping("enabled")
+	public String editEnabled(@RequestParam (name="id") String id, @RequestParam (name="enabled") boolean enabled) {
 		
-		ms.changeEnabled(id);
+		try {
+			ms.changeEnabled(id, !enabled);
+			log.debug("{} 계정의 상태를 {}로 변경", id, enabled);
+		} catch (Exception e) {
+			log.debug("[예외 발생] 계정 상태 변경 실패...");
+		}
 		
 		return "redirect:/admin/list";
 	}

@@ -65,8 +65,14 @@ public class WebSecurityConfig {
             // 권한 예외 설정, 인가(authorization) 실패에만 적용
             .exceptionHandling( ex -> ex
             		// 접근 권한이 없을 때(403) 자동으로 보여줄 페이지 경로를 지정
-            		.accessDeniedPage("/error/403")) 
-            ;
+            		.accessDeniedHandler(
+            				(request, response, accessDiniedException)
+            				-> {
+            					response.sendRedirect("/web5/error/403");
+            				}
+            		)
+            		
+            );
 
         // 개발용 설정: CORS, CSRF 비활성화 (실제 서비스 시에는 활성화 필요)
         http

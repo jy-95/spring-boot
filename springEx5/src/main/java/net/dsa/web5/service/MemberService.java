@@ -3,6 +3,7 @@ package net.dsa.web5.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.data.domain.Sort;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -107,48 +108,63 @@ public class MemberService {
 //		mr.save(entity);
 		
 	}
-
-	public List<MemberDTO> selectAll(String userId) {
+	/**
+	 * 회원목록 조회 처리
+	 * @param userId
+	 * @return 회원목록
+	 */
+	public List<MemberDTO> selectAll() {
 		
-		List<MemberEntity> memberList = mr.findAll();
+		Sort sort = Sort.by(
+				Sort.Order.asc("rolename"),
+				Sort.Order.asc("memberName")
+				
+		);
+		
+		List<MemberEntity> memberList = mr.findAll(sort);
 		List<MemberDTO> dtoList = new ArrayList<>();
 		
 		for (MemberEntity member : memberList) {
-			if(!member.getMemberId().equals(userId)) {
-			MemberDTO dto = MemberDTO.builder()
-									 .memberId(member.getMemberId())
-									 .memberName(member.getMemberName())
-									 .email(member.getEmail())
-									 .phone(member.getPhone())
-									 .address(member.getAddress())
-									 .rolename(member.getRolename())
-									 .enabled(member.getEnabled())
-									 .build();
+			MemberDTO dto = MemberDTO.builder().build();
+			
+			dto.setMemberId(member.getMemberId());
+			dto.setMemberName(member.getMemberName());
+			dto.setEmail(member.getEmail());
+			dto.setPhone(member.getPhone());
+			dto.setAddress(member.getAddress());
+			dto.setRolename(member.getRolename());
+			dto.setEnabled(member.getEnabled());
 			dtoList.add(dto);
-			}
+
 		}
 		
 		return dtoList;
 	}
-
+	
+	/**
+	 * 권한 변경 처리
+	 * @param id
+	 */
 	public void changeRole(String id) {
 
-		MemberEntity entity = mr.findById(id).orElseThrow(() -> new EntityNotFoundException(id + ": 아이디가 없습니다."));
-		if(entity.getRolename().equals("ROLE_ADMIN")) {
-			entity.setRolename("ROLE_USER");
-		}else {
-			entity.setRolename("ROLE_ADMIN");
-		}
+		MemberEntity entity = mr.findById(id).orElseThrow(() -> new EntityNotFoundException("회원이 존재하지 않습니다."));
+		
+		String updateRoleName = entity.getRolename().equals("ROLE_USER") ? "ROLE_ADMIN" : "ROLE_USER";
+		
+		entity.setRolename(updateRoleName);
 		
 	}
-
-	public void changeEnabled(String id) {
-		MemberEntity entity = mr.findById(id).orElseThrow(() -> new EntityNotFoundException(id + ": 아이디가 없습니다."));
-		if(entity.getEnabled().equals(true)) {
-			entity.setEnabled(false);
-		}else {
-			entity.setEnabled(true);
-		}
+	
+	/**
+	 * 계정의 상태를 활성화 / 비활성화
+	 * @param id
+	 * @param enabled
+	 */
+	public void changeEnabled(String id, boolean enabled) {
+		
+		MemberEntity entity = mr.findById(id).orElseThrow(() -> new EntityNotFoundException("회원이 존재하지 않습니다."));
+		
+		entity.setEnabled(enabled);
 	}
 	
 }
