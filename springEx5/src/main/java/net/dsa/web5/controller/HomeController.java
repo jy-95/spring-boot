@@ -1,5 +1,9 @@
 package net.dsa.web5.controller;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
@@ -44,4 +48,69 @@ public class HomeController {
 		log.debug("error 403 - 권한이 없습니다.");
 		return "error/403";
 	}
+	
+	/*
+	 	ISOtream?
+	 		자바의 IOStream(Input/Output Stream)은 
+	 		데이터를 읽고 쓰기 위한 데이터 통로(흐름)
+	 		입출력 대상: 파일, 키보드, 모니터, 네트워크, 메모리 등..
+	 		
+	 	File 클래스
+	 		자바에서 파일이나 폴더의 존재 여부 확인, 생성, 삭제
+	 		, 이름 변경, 경로 정보 확인 등을 할 때 사용하는 클래스
+	 		파일 내용을 읽거나 쓰는 역할X, 파일 전체를 관리하는 역할.
+	 		
+	 	exists()		파일이나 폴더가 존재하는지 확인
+	 	isFile()		이 경로가 파일인지 확인
+	 	isDirectory()	이 경로가 폴더(디렉토리)인지 확인
+	 	mkdir()			폴더 생성
+	 	createNewFile()	빈 파일 생성
+	 	delete()		파일이나 폴더 삭제
+	 	getName()		파일 또는 폴더 이름 반환
+	 	getPath(), getAbsolutePath()	경로 문자열 반환
+	 */
+	
+	// application.properties 사용자 정의 속성값
+	@Value("${board.uploadPath}")	//application.properties 안에 이 이름으로 저장된 값을 불러오겠다는 뜻
+	String uploadPath;
+	
+	@GetMapping("file")
+	public String file() {
+		
+		// 1. 파일 객체 생성(경로 지정)
+		File file = new File(uploadPath + "/" + "example.txt");
+		File dir  = new File(uploadPath + "/" + "myfolder");
+		
+		try {
+			// 2. 파일이 존재하지 않으면 생성
+			if (!file.exists()) {
+				boolean created = file.createNewFile();
+				log.debug("파일 생성 여부: {}", created);
+			} else {
+				log.debug("파일이 이미 존재합니다.");
+			}
+			
+			// 3. 디렉토리(폴더) 생성
+			if (!dir.exists()) {
+				boolean dirCreated = dir.mkdir();
+				log.debug("폴더 생성 여부: {}", dirCreated);
+			} else {
+				log.debug("폴더가 이미 존재합니다.");
+			}
+			
+			// 4. 파일 이름과 경로 출력
+			log.debug("파일 이름: {}", file.getName());
+			log.debug("파일 경로: {}", file.getAbsolutePath());
+			
+			// 5. 파일 삭제(필요시)
+			// boolean deleted = file.delete();
+			// log.debug("파일 삭제 여부: {}", deleted);
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		return "redirect:/";
+	}
+	
 }
