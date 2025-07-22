@@ -4,6 +4,30 @@
 	<meta charset="UTF-8">
 	<title>writeForm</title>
 	<link rel="stylesheet" th:href="@{/css/main.css}">
+	<script>
+		window.onload = function() {
+			document.querySelector('#writeForm')
+					.addEventListener('submit', function(e) {
+					const title = document.quertySelector('#title');
+					const contents = document.querySelector('#contents');
+					
+					if (title.value.length < 5) {
+						alert('제목을 5자 이상 입력하세요.');
+						title.focus();
+						title.select();
+						e.preventDefault();
+						return;
+					}
+					if (contents.value.length < 5) {
+						alert('내용을 5자 이상 입력하세요.');
+						contents.focus();
+						contents.select();
+						e.preventDefault();
+						return;
+					}
+					});
+		}
+	</script>
 </head>
 <body>
 
