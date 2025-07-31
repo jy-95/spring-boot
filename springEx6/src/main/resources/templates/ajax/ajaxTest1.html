@@ -9,10 +9,10 @@
 		$.ajax({
 			url: 'http://localhost.9996/web6/api', 	// 요청 URL
 			type: 'POST', 		// 전송 방식(GET, POST, DELETE)등
-			data: JSON.strinfly({id: 1}), 			// 전송 데이터
-			contentType: 'applicaion/json, '		//서버로 전송할 데이터 형식
-				기본값 : (application/x-window)
-			dataType: 'json', 
+			data: JSON.stringify({id: 1}), 			// 전송 데이터(json 객체를 보냈을 경우)
+			contentType: 'application/json',		//서버로 전송할 데이터 형식
+				기본값 : (application/x-www-form-urlencoded)
+			dataType: 'json', 			// 서버로부터 받는 응답 데이터 형식
 				기본값 : (undefined/), 서버의 응답 헤더를 통해서 파싱 방식 결정
 			headers: {'헤더명' : '값'}, //추가 해더
 			success: function(data){	//요청이 성공적으로 응답되었을 경우
@@ -25,12 +25,15 @@
 				console.log('요청 성공 실패 여부와 상관없이 출력');
 			}
 			
-		})
+		});
 	*/
 		$(document).ready(function(){
 			$('#btn1').click(test1);
 			$('#btn2').click(test2);
 			$('#btn3').click(test3);
+			$('#btn4').click(test4);
+			$('#btn5').click(test5);
+			$('#btn6').click(test6);
 		});
 	
 		function test1(){
@@ -70,13 +73,72 @@
 			$.ajax({
 				url: 'ajaxTest3',
 				type: 'get',
-				datatype: 'text',		// 서버로부터 받을 응답 데이터 형식
+				dataType: 'text',		// 서버로부터 받을 응답 데이터 형식
 							// text, json, html, xml 등등 받을 데이터 타입을 적을 수 있음
 				success: function(msg){
 					alert(msg);
 				},
 				error: function(e){
 					alert('실행 실패..');
+				}
+			});
+		}
+		
+		function test4(){
+			let data = {
+					num1: $('#num1').val(),
+					num2: $('#num2').val()
+			};
+			// ajaxTest4?num1=입력값&num2=입력값
+			$.ajax({
+				url : 'ajaxTest4',
+				type : 'post',
+				data : data,
+				dataType: 'text',//서버로부터 받을 응답의 형식
+				success: function(result){
+					$('#num3').val(result);
+				},
+				error: function(e){
+					alert('계산 실패');
+					}			
+				});
+		}
+		
+		function test5(){
+			let data = {
+					num4: $('#num4').val(),
+					num5: $('#num5').val()
+			};
+			$.ajax({
+				url: 'ajaxTest5',
+				type: 'post',
+				data: data,
+				dataType: 'text',
+				success: function(result){
+					$('#num6').val(result);
+				},
+				error: function (e){
+					alert(e.status);
+					alert(e.responseText); //응답 본문(텍스트 형태)
+				}
+			})
+		}
+		
+		function test6(){
+			let data = {
+					num7: $('#num7').val(),
+					num8: $('#num8').val(),
+					op: $('#op').val()
+			};
+			$.ajax({
+				url: 'ajaxTest6',
+				type: 'post',
+				data: data,
+				success: function(result){
+					$('#num9').val(result);
+				},
+				error: function(e) {
+					alert(e.responseText);
 				}
 			});
 		}
@@ -90,6 +152,41 @@
 			<button id="btn1">서버로 Ajax 요청 보내기</button>
 			<button id="btn2">서버로 문자열 보내기</button>
 			<button id="btn3">서버에서 문자열 받기</button>
+		</p>
+	</section>
+	
+	<section>
+		<p><button id="btn4">값 전달하여 계산하기 1</button></p>
+		<p>
+			<input type="text" id="num1"> + 
+			<input type="text" id="num2"> =
+			<input type="text" id="num3" readonly>
+		</p>
+	</section>
+	
+	<section>
+		<p><button id="btn5">값 전달하여 계산하기 2</button></p>
+		<p>
+			<input type="text" id="num4"> / 
+			<input type="text" id="num5"> =
+			<input type="text" id="num6" readonly>
+		</p>
+	</section>
+	
+	<section>
+		<p>값 전달하여 계산하기 3</p>
+		<p>
+			<input type="text" id="num7">
+			<select id="op">
+				<option value="">연산자 선택</option>
+				<option value="+"> + </option>
+				<option value="-"> - </option>
+				<option value="*"> * </option>
+				<option value="/"> / </option>
+			</select>
+			<input type="text" id="num8">
+			<button id="btn6"> = </button>
+			<input type="text" id="num9" readonly>
 		</p>
 	</section>
 </body>
