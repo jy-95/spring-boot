@@ -1,0 +1,9 @@
+-- SpringEx6(web6.txt)
+create table ajax_comment(
+	num		int				primary key auto_increment,
+	name	varchar(30) 	not null,
+	comment	varchar(1000)	not null
+);
+
+insert into ajax_comment (name, comment) values ('홍길동', '안녕하세요.');
+insert into ajax_comment (name, comment) values ('강감찬', '반갑습니다.');

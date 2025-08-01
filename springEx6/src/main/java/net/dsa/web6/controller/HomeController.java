@@ -12,5 +12,10 @@ public class HomeController {
 	public String main() {
 		return "home";
 	}
+	
+	@GetMapping("ex/comment")
+	public String comment() {
+		return "ex/comment";
+	}
 
 }
