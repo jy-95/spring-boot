@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-PerfumeApplication<perfume>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "net.dsa.ex.PerfumeApplication",
+            "projectName": "perfume",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
